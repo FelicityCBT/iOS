@@ -14,6 +14,7 @@ import FirebaseDatabase
 class  TAndCViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var accept: UIButton!
+    var ref: DatabaseReference!
     
     @IBOutlet weak var textView: UITextView! {
         didSet {
@@ -52,4 +53,17 @@ class  TAndCViewController: UIViewController, UITextViewDelegate {
     }
 
 
+    @IBAction func acceptedTAndC(_ sender: Any) {
+        if Auth.auth().currentUser == nil {
+            return
+        }
+        else {
+            let key = Auth.auth().currentUser!.uid
+            
+            
+            ref = Database.database().reference()
+            
+            ref.child("Users").child(key).child("acceptedTAndC").setValue("true")
+        }
+    }//func
 }

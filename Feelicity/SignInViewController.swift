@@ -14,6 +14,7 @@ import FBSDKLoginKit
 
 class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
     var ref: DatabaseReference!
+    var databaseHandle : DatabaseHandle!
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -82,7 +83,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
                         email = unwrappedEmail
                     }
                 }
-                self.ref?.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
+                self.ref?.child("Users").child(Auth.auth().currentUser!.uid).child("email").setValue(email)
                 print(result ?? "")
             }
             
@@ -160,13 +161,38 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
         NotificationCenter.default.removeObserver(self)
     }
     
+    /*
+     This piece of code checks whether the user signing in has accepted the terms and conditions yet.
+     If they have, then they go straight to the LogASessionViewController else the must go through
+     TAndCViewController and accept first.
+     */
     @objc func goToMainVC() {
         
         User.setCurrentUser()
         //Put segue code here, In here go to next VC by calling your segue or doing it programattically
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let TAndCVC = storyboard.instantiateViewController(withIdentifier: "TAndCViewController") 
-        self.navigationController?.pushViewController(TAndCVC, animated: true)
+        
+        let user = Auth.auth().currentUser!.uid
+        ref.child("Users").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if snapshot.hasChild(user) && snapshot.childSnapshot(forPath: user).hasChild("acceptedTAndC"){
+//                print(user)
+//                print("true")
+                let LogSesh = storyboard.instantiateViewController(withIdentifier: "LogASessionViewController")
+                self.navigationController?.pushViewController(LogSesh, animated: true)
+
+                
+            }else{
+//                print(user)
+//                print("false")
+                let TAndCVC = storyboard.instantiateViewController(withIdentifier: "TAndCViewController")
+                self.navigationController?.pushViewController(TAndCVC, animated: true)
+            }
+            
+            
+        })
+
+      
     }
     
     @objc func showAlert() {

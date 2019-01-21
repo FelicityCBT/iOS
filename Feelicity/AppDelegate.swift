@@ -68,7 +68,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             // User is signed in
             // ...
             if let uid = authResult?.user.uid {
-                self.ref.child("Users").child(uid).setValue(["email": user.profile.email])
+                //self.ref.child("Users").child(uid).setValue(["email": user.profile.email])
+                self.ref?.child("Users").child(Auth.auth().currentUser!.uid).child("email").setValue(user.profile.email)
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "googleSignInSucceeded"), object: nil)
             }
             else {

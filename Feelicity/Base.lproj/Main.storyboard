@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2XY-Qd-Hf9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2XY-Qd-Hf9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -4037,13 +4037,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
+                                <rect key="frame" x="22.5" y="94" width="275" height="353"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323" width="101" height="156"/>
+                                        <rect key="frame" x="115" y="323" width="46" height="30"/>
                                         <state key="normal" title="OK"/>
                                     </button>
                                 </subviews>
@@ -4229,6 +4229,7 @@
                                 <rect key="frame" x="240" y="617" width="49" height="30"/>
                                 <state key="normal" title="Accept"/>
                                 <connections>
+                                    <action selector="acceptedTAndC:" destination="5vU-M0-PXQ" eventType="touchUpInside" id="2wl-XR-4aB"/>
                                     <segue destination="4Mn-mH-7FG" kind="show" id="E22-Eb-ZNj"/>
                                 </connections>
                             </button>
@@ -4589,18 +4590,18 @@ Credit &amp; Contact Information
         <image name="Common Cognitive Distortions Chart" width="400" height="522"/>
         <image name="Happy" width="90" height="90"/>
         <image name="Help" width="90" height="90"/>
-        <image name="LastPic" width="270" height="106"/>
+        <image name="LastPic" width="270" height="106.5"/>
         <image name="Loved" width="90" height="90"/>
         <image name="Nervous" width="90" height="90"/>
         <image name="Okay" width="90" height="90"/>
         <image name="Sad" width="90" height="90"/>
         <image name="Sun" width="182" height="134"/>
         <image name="Tired" width="90" height="90"/>
-        <image name="Works Cited" width="300" height="323"/>
+        <image name="Works Cited" width="300" height="323.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
-        <segue reference="o4w-li-vs1"/>
+        <segue reference="H2C-u5-edP"/>
         <segue reference="8uP-pC-YDv"/>
     </inferredMetricsTieBreakers>
 </document>
