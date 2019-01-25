@@ -14,7 +14,7 @@ import FirebaseDatabase
 class  TAndCViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var accept: UIButton!
-    
+    var ref: DatabaseReference!
     @IBOutlet weak var textView: UITextView! {
         didSet {
             textView.delegate = self
@@ -50,6 +50,21 @@ class  TAndCViewController: UIViewController, UITextViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         accept.isEnabled = scrollView.contentOffset.y + scrollView.bounds.height == scrollView.contentSize.height
     }
+    
+    @IBAction func acceptedTAnC(_ sender: Any) {
+        if Auth.auth().currentUser == nil {
+            return
+        }
+        else {
+            let key = Auth.auth().currentUser!.uid
+            
+            
+            ref = Database.database().reference()
+            
+            ref.child("Users").child(key).child("acceptedTAndC").setValue("true")
+        }
+    }
+    
 
 
 }

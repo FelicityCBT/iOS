@@ -4228,6 +4228,7 @@
                                 <rect key="frame" x="240" y="617" width="49" height="30"/>
                                 <state key="normal" title="Accept"/>
                                 <connections>
+                                    <action selector="acceptedTAnC:" destination="5vU-M0-PXQ" eventType="touchUpInside" id="BpQ-p9-wla"/>
                                     <segue destination="4Mn-mH-7FG" kind="show" id="E22-Eb-ZNj"/>
                                 </connections>
                             </button>
@@ -4599,7 +4600,7 @@ Credit &amp; Contact Information
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
-        <segue reference="H2C-u5-edP"/>
-        <segue reference="8uP-pC-YDv"/>
+        <segue reference="E22-Eb-ZNj"/>
+        <segue reference="adA-9h-ZFA"/>
     </inferredMetricsTieBreakers>
 </document>
