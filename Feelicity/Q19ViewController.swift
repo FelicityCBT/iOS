@@ -75,8 +75,8 @@ class Q19ViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "emotionsCell", for: indexPath) as? emotionsCell {
             cell.emotionLabel.text = emotions[indexPath.row].name       // emotion at the row you're on
-            cell.stronglyDisagree.text = "Strongly Disagree"
-            cell.stronglyAgree.text = "Strongly Agree"
+            cell.stronglyDisagree.text = "Weakly"
+            cell.stronglyAgree.text = "Strongly"
             cell.emotionSlider.value = Float(emotions[indexPath.row].value)/100.0
             cell.emotionSlider.addTarget(self, action: #selector(handleSlider(_:)), for: .valueChanged)
             cell.emotionSlider.tag = indexPath.row
