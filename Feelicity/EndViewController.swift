@@ -16,6 +16,7 @@ import FBSDKLoginKit
 class EndViewController: UIViewController {
     
     var ref: DatabaseReference!
+    static let rsaEncryptionPKCS1: SecKeyAlgorithm = SecKeyAlgorithm.ecdsaSignatureMessageX962SHA512
     
     // No height constraint
     @IBOutlet weak var label: UILabel!
@@ -101,6 +102,8 @@ class EndViewController: UIViewController {
         return formatter.string(from: date)
     }
     
+
+    
     func submitToFirebase () {
         // Thoughts Dictionary
         var thoughtsDictionary: [String:Any] = [:]
@@ -112,12 +115,12 @@ class EndViewController: UIViewController {
         }
         
         // write to firebase
-        if Auth.auth().currentUser == nil {
+        
+        guard let key = Auth.auth().currentUser?.uid else {
             return
         }
-        else {
-        let key = Auth.auth().currentUser!.uid
-        let journal = ["User": key,
+        
+        let journal = [//"User": key,
                        "Timestamp": getStringFromDate(format: "MMMM dd, yyyy 'at' hh:mm:ss a 'UTC'Z"),
                        "Date": getStringFromDate(format: "MMMM dd, yyyy"),
                        "DateAsSeconds": Date().timeIntervalSince1970,
@@ -219,18 +222,57 @@ class EndViewController: UIViewController {
                        "PostSad": (Journal.current?.postSad)! as Bool,
                        "PostOkay": (Journal.current?.postOkay)! as Bool] as [String : Any]
         
+        var error: Unmanaged<CFError>?
+        var publickey: SecKey?
+        publickey = User.current?.publicKey
+        
+        let tag = key.data(using: .utf8)
+        
+        let attributes:[String:Any] = [
+            kSecAttrKeyType as String: kSecAttrKeyTypeRSA,
+            kSecAttrKeySizeInBits as String: 2048,
+            kSecAttrKeyClass as String: kSecAttrKeyClassPrivate,
+            kSecAttrIsPermanent as String : true,
+            kSecAttrApplicationTag as String: tag
+        ]
+        
+        if publickey == nil {
+            
+            guard
+                let privateKey = SecKeyCreateRandomKey(attributes as CFDictionary, &error),
+                let pk = SecKeyCopyPublicKey(privateKey)
+            else {
+                
+                return
+            }
+            
+            publickey = pk
+        }
+        
+        guard let pkey = publickey else {
+            return
+        }
+        
+        // Encrypt the journal data
+        
+        let encryptedData = SecKeyCreateEncryptedData(pkey, EndViewController.rsaEncryptionPKCS1, journal as! CFData, &error)
+        var finalJournal: [String:Any] = [:]
+        finalJournal.updateValue(key, forKey:"User")
+       // finalJournal += encryptedData
+            finalJournal.updateValue(encryptedData as Any, forKey: "encryptedData")
         let id = UUID().uuidString
-        ref?.child("Journal").child(id).setValue(journal, withCompletionBlock: { (error, snapshot) in
-            // Encrypt the journal data
-            //var encryptedData = SecKeyCreateEncryptedData(publicKey, rsaEncryptionPKCS1, journal, &error)
+        ref?.child("Journal").child(id).setValue(finalJournal, withCompletionBlock: { (error, snapshot) in
             self.ref?.child("Users").child(key).child("Journal").child(journal["Date"] as! String).updateChildValues([id: journal["Timestamp"]])
             
         })
-        }   // else clause
-        
+
         // reset app
         Journal.current = nil
         UserDefaults.standard.set(nil, forKey: "currentJournal")
     }
-    
 }
+    
+
+
+
+
