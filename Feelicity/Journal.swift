@@ -61,6 +61,31 @@ class Journal: NSObject {
     var vulnerablePercentage10: Int = 50
     var sensitivePercentage11: Int = 50
     
+    // George Added values for Q6
+    var lossOfEnergy: Bool = false
+    var lossOfMotivation: Bool = false
+    var increasedSighing: Bool = false
+    var deeperBreaths: Bool = false
+    var exhaustion: Bool = false
+    var changeInAppetite: Bool = false
+    var insomnia: Bool = false
+    var listlessness: Bool = false
+    var headaches: Bool = false
+    var otherSymptoms: String? = ""
+    
+    // George Added values for Q8
+    var seekingSocialSupport: Bool = false
+    var reappraisingSituation: Bool = false
+    var solvingProblem: Bool = false
+    var acceptingSituation: Bool = false
+    var exercising: Bool = false
+    var eating: Bool = false
+    var shopping: Bool = false
+    var substanceUse: Bool = false
+    var keepingBusy: Bool = false
+    var otherMechanisms: String? = ""
+    
+    
     var behavior: String? = ""
     var behaviorInfluence: String? = ""
     

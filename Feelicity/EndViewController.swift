@@ -157,8 +157,53 @@ class EndViewController: UIViewController {
                        "lethargicPercentage9": (Journal.current?.lethargicPercentage9)! as Int,
                        "vulnerablePercentage10": (Journal.current?.vulnerablePercentage10)! as Int,
                        "sensitivePercentage11": (Journal.current?.sensitivePercentage11)! as Int,
-                       "behavior": (Journal.current?.behavior)! as String,
-                       "behaviorInfluence": (Journal.current?.behaviorInfluence)! as String,
+                       
+                       // Added by George on 2/13/19
+                        "lossOfEnergy":
+                            (Journal.current?.lossOfEnergy)! as Bool,
+                        "lossOfMotivation":
+                            (Journal.current?.lossOfMotivation)! as Bool,
+                        "increasedSighing":
+                            (Journal.current?.increasedSighing)! as Bool,
+                        "deeeperBreaths":
+                            (Journal.current?.deeperBreaths)! as Bool,
+                        "exhaustion":
+                            (Journal.current?.exhaustion)! as Bool,
+                        "changeInAppetite":
+                            (Journal.current?.changeInAppetite)! as Bool,
+                        "insomnia":
+                            (Journal.current?.insomnia)! as Bool,
+                        "listlessness":
+                            (Journal.current?.listlessness)! as Bool,
+                        "headaches":
+                            (Journal.current?.headaches)! as Bool,
+                        "otherSymptoms":
+                            (Journal.current?.otherSymptoms)! as String,
+                        
+                        //Added by George on 2/13/19
+                        "seekingSocialSupport":
+                            (Journal.current?.seekingSocialSupport)! as Bool,
+                        "reappraisingTheSituation":
+                            (Journal.current?.reappraisingSituation)! as Bool,
+                        "solvingTheProblem":
+                            (Journal.current?.solvingProblem)! as Bool,
+                        "acceptingTheSituation":
+                            (Journal.current?.acceptingSituation)! as Bool,
+                        "exercising":
+                            (Journal.current?.exercising)! as Bool,
+                        "eating":
+                            (Journal.current?.eating)! as Bool,
+                        "shopping":
+                            (Journal.current?.shopping)! as Bool,
+                        "substanceUse":
+                            (Journal.current?.substanceUse)! as Bool,
+                        "keepingBusy":
+                            (Journal.current?.keepingBusy)! as Bool,
+                        "otherCopingMechanisms":
+                            (Journal.current?.otherMechanisms)! as String,
+                       
+                 // Unnecessary      "behavior": (Journal.current?.behavior)! as String,
+               // Unnecessary        "behaviorInfluence": (Journal.current?.behaviorInfluence)! as String,
                        "copingMech": (Journal.current?.copingMech)! as String,
                        "alternativeCoping": (Journal.current?.alternativeCoping)! as String,
                        "avoided": (Journal.current?.avoided)! as String,
@@ -211,6 +256,8 @@ class EndViewController: UIViewController {
                        "lethargicPercentageReview9": (Journal.current?.lethargicPercentageReview9)! as Int,
                        "vulnerablePercentageReview10": (Journal.current?.vulnerablePercentageReview10)! as Int,
                        "sensitivePercentageReview11": (Journal.current?.sensitivePercentageReview11)! as Int,
+                       
+                       
                        "PostLoved": (Journal.current?.postLoved)! as Bool,
                        "PostHappy": (Journal.current?.postHappy)! as Bool,
                        "PostNervous": (Journal.current?.postNervous)! as Bool,
