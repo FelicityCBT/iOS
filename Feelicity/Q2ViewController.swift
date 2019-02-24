@@ -45,10 +45,27 @@ class  Q2ViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+        if(Journal.current?.behaviorInfluence != ""){
+            Q2TextBox.text = Journal.current?.thoughtDescription1
+        }
     }
     
     @objc func doneClicked() {
         view.endEditing(true)
     }
     
+    @IBAction func nextView(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        debugPrint("here is " + Q2TextBox.text)
+        if(Q2TextBox.text == ""){
+            let alert = UIAlertController(title: "Fill in the blank", message: "Please fill in the blank before moving on", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            
+            let next = storyboard.instantiateViewController(withIdentifier: "Q3")
+            self.navigationController?.pushViewController(next, animated: true)
+            
+        }
+    }
 }

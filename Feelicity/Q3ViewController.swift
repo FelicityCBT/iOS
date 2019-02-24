@@ -23,6 +23,18 @@ class  Q3ViewController: UIViewController {
         Journal.current?.stuckPoint1 = Q3TextBox.text
         Journal.current?.stuckPoint2 = Q3TextBox2.text
         Analytics.logEvent("land_on_Q4", parameters: ["land_on_Q4": true])
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //debugPrint("here is " + Q2TextBox.text)
+        if(Journal.current?.stuckPoint1 == "" || Journal.current?.stuckPoint2 == ""){
+            let alert = UIAlertController(title: "Fill in the blank", message: "Please fill in the blank before moving on", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            
+            let next = storyboard.instantiateViewController(withIdentifier: "Q4")
+            self.navigationController?.pushViewController(next, animated: true)
+            
+        }
     }
 
     
@@ -47,6 +59,14 @@ class  Q3ViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+        if(Journal.current?.stuckPoint1 != ""){
+            Q3TextBox.text = Journal.current?.stuckPoint1
+        }
+        
+        if(Journal.current?.stuckPoint2 != ""){
+            Q3TextBox2.text = Journal.current?.stuckPoint2
+        }
+       
     }
     
     @objc func doneClicked() {

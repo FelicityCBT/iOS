@@ -16,6 +16,7 @@ class  Q1ViewController: UIViewController {
     //Outlets for Question 1 go here
     @IBOutlet weak var YesSwitch: UISwitch!
     @IBOutlet weak var NoSwitch: UISwitch!
+    @IBOutlet weak var TextPrompt: UILabel!
     
     //Question 2 on Q1 page
     @IBOutlet weak var Q1TextBox: UITextView!
@@ -28,6 +29,26 @@ class  Q1ViewController: UIViewController {
             NoSwitch.isOn ?
             true: false
         Journal.current?.situationDescription2 = Q1TextBox.text
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //debugPrint("here is " + Q2TextBox.text)
+        if(Journal.current?.isFeelingNegativeEmotionsYes == false && Journal.current?.isFeelingNegativeEmotionsNo == false){
+            let alert = UIAlertController(title: "Make a selection", message: "Please select \"yes\" or \"no\" before moving on", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        if(Journal.current?.isFeelingNegativeEmotionsYes == true && Journal.current?.situationDescription2 == ""){
+            let alert = UIAlertController(title: "Fill in the blank", message: "Please fill in the blank before moving on", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        if((Journal.current?.isFeelingNegativeEmotionsYes == true && Journal.current?.situationDescription2 != "") || Journal.current?.isFeelingNegativeEmotionsNo == true){
+            
+            let next = storyboard.instantiateViewController(withIdentifier: "Q2")
+            self.navigationController?.pushViewController(next, animated: true)
+            
+        }
         Analytics.logEvent("land_on_Q2", parameters: ["land_on_Q2": true])
         
     }
@@ -54,8 +75,31 @@ class  Q1ViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+        if (Journal.current?.isFeelingNegativeEmotionsYes == false){
+            TextPrompt.isHidden = true;
+            Q1TextBox.isHidden = true;
+            if(Journal.current?.isFeelingNegativeEmotionsNo == true){
+                NoSwitch.isOn = true;
+            }
+        }else{
+            
+            TextPrompt.isHidden = false;
+            Q1TextBox.isHidden = false;
+            YesSwitch.isOn = true;
+            Q1TextBox.text = Journal.current?.situationDescription2
+        }
+
     }
     
+    @IBAction func yesButtonToggle(_ sender: Any) {
+        if YesSwitch.isOn{
+            TextPrompt.isHidden = false
+            Q1TextBox.isHidden = false
+        }else{
+            TextPrompt.isHidden = true;
+            Q1TextBox.isHidden = true;
+        }
+    }
     @objc func doneClicked() {
         view.endEditing(true)
     }

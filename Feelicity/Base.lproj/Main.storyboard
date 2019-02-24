@@ -671,7 +671,6 @@
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="submit:" destination="4gD-w4-Kbs" eventType="touchUpInside" id="9Fm-FS-exO"/>
-                                    <segue destination="0xB-cC-kKP" kind="show" id="vNF-sO-VHH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-ll-CWF">
@@ -682,6 +681,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="je7-2O-ALn">
                                 <rect key="frame" x="29" y="88.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="yesButtonToggle:" destination="4gD-w4-Kbs" eventType="valueChanged" id="fYl-bk-f2P"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hdb-Xo-hox">
                                 <rect key="frame" x="29" y="126.5" width="51" height="31"/>
@@ -759,6 +761,7 @@
                     <connections>
                         <outlet property="NoSwitch" destination="Hdb-Xo-hox" id="GXI-tb-pab"/>
                         <outlet property="Q1TextBox" destination="wos-mg-nGH" id="bMS-f7-QO9"/>
+                        <outlet property="TextPrompt" destination="ZdS-sI-eiy" id="J1W-VG-q0e"/>
                         <outlet property="YesSwitch" destination="je7-2O-ALn" id="dZ1-IR-UMD"/>
                     </connections>
                 </viewController>
@@ -787,7 +790,7 @@
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="Submit:" destination="0xB-cC-kKP" eventType="touchUpInside" id="b2o-NZ-a2s"/>
-                                    <segue destination="Ggd-IF-gJg" kind="show" identifier="next" id="qQP-Ir-idP"/>
+                                    <action selector="nextView:" destination="0xB-cC-kKP" eventType="touchUpInside" id="NWM-Qc-s7y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-YY-X4V">
@@ -875,7 +878,6 @@
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="Submit:" destination="Ggd-IF-gJg" eventType="touchUpInside" id="0vt-Qp-Ygy"/>
-                                    <segue destination="Fyn-Ms-PJn" kind="show" id="3mA-jc-tvx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-b8-12z">
@@ -1682,7 +1684,6 @@
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="submit:" destination="SUR-e5-g6H" eventType="touchUpInside" id="Cis-E9-egU"/>
-                                    <segue destination="sEX-Of-5Rq" kind="show" identifier="next" id="pHG-Pc-kwb"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="750" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-N3-E5d">
@@ -1966,7 +1967,7 @@
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="submit:" destination="I6S-ac-pG0" eventType="touchUpInside" id="2mD-Yd-pup"/>
-                                    <segue destination="Jzj-96-l9p" kind="show" identifier="next" id="4jp-or-uQW"/>
+                                    <segue destination="Jzj-96-l9p" kind="show" id="kXy-wd-KWx"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pka-1j-fOA">
@@ -3722,7 +3723,7 @@
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="Submit:" destination="ggZ-Sp-XJf" eventType="touchUpInside" id="JV0-92-GOh"/>
-                                    <segue destination="zHX-8e-mEE" kind="show" id="kn5-TX-sNt"/>
+                                    <segue destination="zHX-8e-mEE" kind="show" id="idx-ck-M0C"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What helped?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnq-CR-bkd">
@@ -4730,7 +4731,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
-        <segue reference="E22-Eb-ZNj"/>
+        <segue reference="o4w-li-vs1"/>
         <segue reference="adA-9h-ZFA"/>
     </inferredMetricsTieBreakers>
 </document>
