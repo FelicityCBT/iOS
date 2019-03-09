@@ -4712,6 +4712,329 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
             </objects>
             <point key="canvasLocation" x="20284" y="43"/>
         </scene>
+        <!--Wel View-->
+        <scene sceneID="GJl-Hy-eco">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeView" id="e0e-vc-oJ3" customClass="WelView" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9u-gx-ClW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4K-ZS-7S9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-x4-IWE">
+                                        <rect key="frame" x="21" y="522" width="330" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Thank you and please contact us if you have any questions! 
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-jC-eh3">
+                                        <rect key="frame" x="16" y="575" width="158" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Click this to contact">
+                                            <color key="titleColor" red="1" green="0.77448001190000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickLink:" destination="e0e-vc-oJ3" eventType="touchUpInside" id="pIy-VK-nxO"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gtf-Ql-hWy">
+                                        <rect key="frame" x="26" y="92" width="323" height="402"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Before we begin, we’d love to get to know you. Please fill out the following demographic  survey and screening tools before proceeding to the app. This will ensure that FelicityCBT will be a good fit for your needs.   If you are experiencing any mental health issues or feel you may be in need of clinical assistance, please contact the Counseling and Psychological Services (CAPS) Clinic at 858-534-3755 for a confidential evaluation. CAPS is free for UCSD students who have paid the Student Services Fee for the quarter, including for those without insurance. Crisis and emergency counseling is available for UCSD students 24 hours a day, 7 days a week. Trained counselors are also available 24-hours a day, 7-days a week through the San Diego County Access and Crisis Line at 1-888-724-7240 to provide free support for suicide prevention, as well as information about available mental health services, including for those without insurance. If you are having thoughts of suicide, please call the National Suicide Prevention Lifeline at 1-800-273-8255. If at any time you believe you are having a medical or psychiatric emergency, please dial 911.
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edu-Ae-beh">
+                                        <rect key="frame" x="301" y="575" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="qBk-ZQ-yey"/>
+                                            <constraint firstAttribute="height" constant="50" id="qmq-BL-G9T"/>
+                                        </constraints>
+                                        <state key="normal" image="Arrow"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-r5-4Wa">
+                                        <rect key="frame" x="26" y="50" width="323" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Welcome to FelicityCBT! 
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="dx5-YD-iFR"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bUy-SI-j1h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qnl-aJ-WbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2329" y="797"/>
+        </scene>
+        <!--Demo Survey-->
+        <scene sceneID="AIy-Eu-Vm3">
+            <objects>
+                <viewController storyboardIdentifier="DemoSurvey" id="ijz-a3-Acl" customClass="DemoSurvey" customModule="Feelicity" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2We-6Y-3s8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aic-5a-6Sm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.64313725489999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Demographic Survey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giU-ZN-50i">
+                                <rect key="frame" x="26" y="43" width="323" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4hD-nY-2p1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWG-6X-Drb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3143.1999999999998" y="807.34632683658174"/>
+        </scene>
+        <!--Phy And Gad-->
+        <scene sceneID="Rpz-VP-lrO">
+            <objects>
+                <viewController storyboardIdentifier="PhyAndGad" id="0TI-Lg-i2G" customClass="PhyAndGad" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egb-ZR-LEB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="noB-Zl-en7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.64313725489999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE0-yC-olY">
+                                <rect key="frame" x="41" y="439" width="130" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="lpP-5Y-Pt4"/>
+                                    <constraint firstAttribute="height" constant="30" id="zxh-nY-BLC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHQ and GAD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-d4-OoO">
+                                <rect key="frame" x="26" y="66" width="323" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You are eligible to be a participant in our research study. Would you like more information?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zwM-0n-Pla">
+                                <rect key="frame" x="41" y="166" width="292" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14U-40-kYF">
+                                <rect key="frame" x="203" y="439" width="130" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="m6Q-wG-ZX6"/>
+                                    <constraint firstAttribute="height" constant="30" id="ybD-4m-hQ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IOR-E2-wAg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QiX-If-CZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3828" y="775.86206896551732"/>
+        </scene>
+        <!--Consent Form-->
+        <scene sceneID="aWZ-e2-WzM">
+            <objects>
+                <viewController storyboardIdentifier="ConsentForm" id="6DB-qe-yNh" customClass="ConsentForm" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="neV-BC-H00">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxV-mB-eqg">
+                                <rect key="frame" x="26" y="524" width="323" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">By clicking “I agree” below you are indicating that you are at least 18 years old, have read this consent form, and agree to participate in this research study. Please print a copy of this page for your records.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consent Form" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MD-Nb-tdE">
+                                <rect key="frame" x="26" y="39" width="323" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdD-TJ-Fba">
+                                <rect key="frame" x="41" y="603" width="130" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Ff1-s0-1jN"/>
+                                    <constraint firstAttribute="height" constant="30" id="ukl-fM-aa8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-FK-g5b">
+                                <rect key="frame" x="203" y="603" width="130" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NLb-hn-Wsf"/>
+                                    <constraint firstAttribute="width" constant="130" id="xjL-81-jIv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-I8-1OB">
+                                <rect key="frame" x="21" y="94" width="333" height="443"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You are invited to participate in a research study titled “Cognitive Behavioral Therapy in a Mobile Application for Mental Disorders.” This study is being conducted through the University of California, San Diego (UCSD) SONA Experiment Management System by Dr. Greenwood. Karen Yang is a co-investigator on this study. Undergraduate students 18 years or older are eligible to participate.
+ 
+The purpose of this research study is to assess the effectiveness of a self-help mobile application intervention using cognitive behavioral therapy for depression and/or anxiety. If you agree to take part in this study, you will be asked to download a mobile application, FelicityCBT, which is available on both Apple and Google Play app stores and allow the app to push notifications. The terms and conditions, introductory video, and two screening tools (the PHQ-9 and the GAD-7) will be administered upon the user’s first time opening the app. Both are short (10 items or less) questionnaires, with items rated on a 3-point scale, created by the US Preventive Services Task Force to diagnose depression and anxiety, and observe severity. These questionnaires each take approximately 5 minutes or less to complete. You will receive the following message after you complete the questionnaires: “If you are experiencing signs of any mental conditions or need additional mental health assistance, you may want to contact CAPS, which is free for UCSD students who have paid the Student Services Fee for the quarter, including for those without insurance. The phone number for an initial confidential and free evaluation at CAPS is (858) 534-3755. If you are having thoughts of suicide, please call the National Suicide Prevention Lifeline at 1-800-273-8255. If at any time you believe you are having a medical or psychiatric emergency, please dial 911.” You will be given an automatically-calculated score upon completion of the questionnaires. If you fall into mild to moderate categories of depression and/or anxiety, you will be offered participation in a 6 week study. Given the nature of the study, participants must be willing to openly and honestly answer some very personal questions, bearing in mind that confidentiality and anonymity will be rigorously maintained.
+ 
+For the first 3 weeks, you will be instructed to either utilize the blank journaling section of the app (“Log a Blank Journal Session”) or the CBT section of the app (“Log a CBT Session”) at least 3 times per week to act as the control. You will be encouraged to journal following a distressing event or after a negative thought and to focus their entries on their negative emotions and experiences. We will send reminders in the form of push notifications to your phone daily at 8:00 pm PST to ensure that you complete the journaling sessions at least 3 times per week. Each session will take about 10 to 20 minutes.
+ 
+After the initial 3 weeks, you will be prompted to re-take the PHQ-9 and GAD-7 by push notification to your phone and by email.
+ 
+If you were initially instructed to use the blank journaling section, you will now use CBT section of the app, and vice versa for the final 3 weeks of the study. At the end of the 6 weeks, you will be instructed to take the PHQ-9 and GAD-7 for the third and final time by push notification and email.
+ 
+There will be no direct benefit to you from participating in this research. The investigators, however, may learn more about mobile application based cognitive behavioral therapy as a self-help option for young adults, and campus mental health services may benefit from this knowledge.
+ 
+There are minimal risks associated with participation in this research study. Some participants may experience emotional discomfort in response to certain questions. Individual questions causing discomfort may be skipped if necessary and still allow for session completion. Although rare and highly unlikely, a loss of confidentiality through the SONA system or the app database, which is encrypted, restricted, and password-protected, could potentially result from computer software hacking or IP address breach. To minimize this risk, the investigators will only have access to an anonymous, randomly assigned participant identification number in conjunction with your data entries. Research records will be kept confidential to the extent allowed by law and may be reviewed by the UCSD Institutional Review Board.
+ 
+In compensation for your time, you will receive a $30 Amazon gift card for completing the study. Your participation in this study is entirely voluntary, and you may choose to withdraw at any time by simply exiting the app.
+ 
+If you have questions about this study or if you have a research related problem, you may contact Dr. Greenwood at 858-246-1897. If you have any questions concerning your rights as a research subject, you may contact the UCSD Human Research Protections Program Office at 858-246-HRPP (858-246-4777). If you feel you may be in need of clinical assistance, please contact the UCSD Counseling and Psychological Services (CAPS) Clinic at 858-534-3755.
+ 
+Our references in the development of FelicityCBT are as follows:
+American College Health Association: National College Health Assessment (Rep.). (n.d.). Retrieved http://www.acha-ncha.org/docs/NCHA-II_SPRING_2017_REFERENCE_GROUP_EXECUTIVE_SUMMARY.pdf
+ 
+Beck, J. S., &amp; Beck, J. S. (2011). Cognitive therapy: Basics and beyond. New York: Guilford Press.
+
+Buchanan, J. L. (2012). Prevention of Depression in the College Student Population: A Review of the Literature. Archives of Psychiatric Nursing,26(1), 21-42. doi:10.1016/j.apnu.2011.03.003
+CBT Worksheets. (n.d.). Retrieved from https://www.therapistaid.com/therapy-worksheets/cbt/none
+ 
+Craske, M. G. (2017). Cognitive-Behavioral Therapy(2nd ed., Theories of Psychotherapy). Washington, DC: American Psychological Association. doi:10.1037/0000027-000
+ 
+Day, V., McGrath, P. J., &amp; Wojtowicz, M. (2013). Internet-based guided self-help for university students with anxiety, depression and stress: A randomized controlled clinical trial. Behaviour Research and Therapy, 51(7), 344-351. http://dx.doi.org/10.1016/j.brat.2013.03.003
+ 
+Farabaugh, A., Bitran, S., Nyer, M., Holt, D. J., Pedrelli, P., Shyu, I., . . . Fava, M. (2012, May 22). Depression and suicidal ideation in college students. Psychopathology, 45(4):228-34. doi: 10.1159/000331598
+ 
+Fletcher, R. R., Tam, S., Omojola, O., Redemske, R., &amp; Kwan, J. (2011). Wearable sensor platform and mobile application for use in cognitive behavioral therapy for drug addiction and PTSD. 2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society. doi:10.1109/iembs.2011.6090513
+ 
+Hedegaard, H., Curtin, S. C., Warner, W., Suicide rates in the United States continue to increase. NCHS Data Brief, no 309. Hyattsville, MD: National Center for Health Statistics. 2018.
+ 
+Hofmann, S. G., Asnaani, A., Vonk, I. J., Sawyer, A. T., &amp; Fang, A. (2012). The Efficacy of
+Cognitive Behavioral Therapy: A Review of Meta-analyses. Cognitive Therapy and Research,36(5), 427-440. doi:10.1007/s10608-012-9476-1
+ 
+Hur, J., Kim, B., Park, D., &amp; Choi, S. (2018). A Scenario-Based Cognitive Behavioral Therapy Mobile App to Reduce Dysfunctional Beliefs in Individuals with Depression: A Randomized Controlled Trial. Telemedicine and E-Health,24(9), 710-716. doi:10.1089/tmj.2017.0214
+ 
+Kanuri, N., Newman, M. G., Ruzek, J. I., Kuhn, E., Manjula, M., Jones, M., . . . Taylor, C. B. (2015). The Feasibility, Acceptability, and Efficacy of Delivering Internet-Based Self-Help and Guided Self-Help Interventions for Generalized Anxiety Disorder to Indian University Students: Design of a Randomized Controlled Trial. JMIR Research Protocols,4(4). doi:10.2196/resprot.4783
+ 
+Karyotaki E, Riper H, Twisk J, et al. Efficacy of Self-guided Internet-Based Cognitive
+Behavioral Therapy in the Treatment of Depressive Symptoms A Meta-analysis of Individual Participant Data . JAMA Psychiatry.2017;74(4):351–359. doi:10.1001/jamapsychiatry.2017.0044
+ 
+King, R. J., Orr, J. A., Poulsen, B., Giacomantonio, S. G., &amp; Haden, C. (2017). Correction to: Understanding the Therapist Contribution to Psychotherapy Outcome: A Meta-Analytic Approach. Administration and Policy in Mental Health and Mental Health Services Research,45(1), 193-194. doi:10.1007/s10488-017-0831-0
+ 
+Kobak, K. A., Mundt, J. C., &amp; Kennard, B. (2015). Integrating technology into cognitive behavior therapy for adolescent depression: A pilot study. Annals of General Psychiatry,14(37). doi:10.1186/s12991-015-0077-8
+ 
+Morris, M. E., Kathawala, Q., Leen, T. K., Gorenstein, E. E., Guilak, F., Labhard, M., &amp;
+Deleeuw, W. (2010). Mobile Therapy: Case Study Evaluations of a Cell Phone Application for Emotional Self-Awareness. Journal of Medical Internet Research,12(2). doi:10.2196/jmir.1371
+ 
+Stolz, T., Schulz, A., Krieger, T., Vincent, A., Urech, A., Moser, C., ... Berger, T. (2018). A
+mobile app for social anxiety disorder: A three-arm randomized controlled trial comparing mobile and PC-based guided self-help interventions. Journal of Consulting and Clinical Psychology,86(6), 493-504. doi:10.1037/ccp0000301
+ 
+Vivyan, C. (n.d.). CBT self help and therapy resources. Retrieved from https://www.getselfhelp.co.uk/
+ 
+Wilding, C., &amp; Milne, A. (2008). Teach yourself cognitive behavioural therapy. Blacklick, OH:
+McGraw-Hill.
+ 
+Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . . Tansey, L. (2013). Guided Self-Help Cognitive Behavioural Therapy for Depression in Primary Care: A Randomised Controlled Trial. PLoS ONE,8(1). doi:10.1371/annotation/998d1a71-7c06-4ebd-8deb-d5db5ad21c31
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hHb-lp-19c"/>
+                    </view>
+                    <connections>
+                        <outlet property="consentForm" destination="P4U-I8-1OB" id="ddW-nT-3xF"/>
+                        <outlet property="didScroll" destination="P4U-I8-1OB" id="csi-u1-gQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ti7-Pf-237" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4677.6000000000004" y="796.55172413793105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xQM-Lz-NTl">
+            <objects>
+                <viewController id="JRF-hp-I0u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lPK-eo-IZm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Fp5-v2-DSB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMv-PQ-2xI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Angry" width="90" height="90"/>
@@ -4731,7 +5054,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
-        <segue reference="o4w-li-vs1"/>
+        <segue reference="E22-Eb-ZNj"/>
         <segue reference="adA-9h-ZFA"/>
     </inferredMetricsTieBreakers>
 </document>
