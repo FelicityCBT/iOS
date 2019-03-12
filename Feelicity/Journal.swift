@@ -91,9 +91,12 @@ class Journal: NSObject {
     
     var copingMech: String? = ""
     var alternativeCoping: String? = ""
-    
-    var avoided: String? = ""
-    var prosCons: String? = ""
+ 
+    var avoided: [String] = []
+    var pros: [String] = []
+    var cons: [String] = []
+   // var avoided: String? = ""
+    //var prosCons: String? = ""
     
     var thoughts: [Thought] = [Thought]()
 //    var thoughtAction: String? = ""
@@ -121,7 +124,7 @@ class Journal: NSObject {
     var opinion: Bool = false
     
     var reshapeImage: String? = ""
-    var positives: String? = ""
+    var positives: [String] = []
     
     var believePreviousThought: Int = 50
     
@@ -129,8 +132,8 @@ class Journal: NSObject {
     var alternativeBelief: Int = 50
     
     var doneDifferently: String? = ""
-    var whatHelped: String? = ""
-    var whatDidnt: String? = ""
+    var whatHelped: [String] = [] //kimbo changed these two 
+    var whatDidnt: [String] = []
     
     var feelsAngerPost: Bool = false
     var feelsHopelessnessPost: Bool = false

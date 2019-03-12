@@ -43,10 +43,25 @@ class Q15ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func addAnotherLine(_ sender: Any) {
+        if let text2 = text2.text {
+            // positives is not empty
+            if (text2 != "") {
+                Journal.current?.positives.append(text2)
+                self.text2.text = ""
+            }
+            else {
+                let alert = UIAlertController(title: "Fill in the blank", message: "Please fill in a positive before moving on", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
     @IBAction func submit(_ sender: Any) {
         
         Journal.current?.reshapeImage = text1.text
-        Journal.current?.positives = text2.text
+     //   Journal.current?.positives = text2.text
         Analytics.logEvent("land_on_Q16", parameters: ["land_on_Q16": true])
         
     }

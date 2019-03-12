@@ -19,10 +19,31 @@ class  Q20ViewController: UIViewController {
     
     @IBAction func Submit(_ sender: Any) {
         Journal.current?.doneDifferently = Q1TextBox.text
-        Journal.current?.whatHelped = Q2TextBox.text
-        Journal.current?.whatDidnt = Q3TextBox.text
+      //  Journal.current?.whatHelped = Q2TextBox.text
+      //  Journal.current?.whatDidnt = Q3TextBox.text
         Analytics.logEvent("land_on_post_mood", parameters: ["land_on_post_mood": true])
         
+    }
+    
+    @IBAction func addAnotherLine(_ sender: Any) {
+        if let Q2TextBox = Q2TextBox.text, let Q3TextBox = Q3TextBox.text {
+            // either what helped/didn't text is not empty
+            if (Q2TextBox != "" || Q3TextBox != "") {
+                if (Q2TextBox != ""){
+                    Journal.current?.whatHelped.append(Q2TextBox)
+                    self.Q2TextBox.text = ""
+                }
+                if(Q3TextBox != "") {
+                    Journal.current?.whatDidnt.append(Q3TextBox)
+                    self.Q3TextBox.text = ""
+                }
+            }
+            else {
+                let alert = UIAlertController(title: "Fill in the blank", message: "Please fill in the blank for either what helped or what didn't before moving on", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     override func viewDidLoad() {

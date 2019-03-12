@@ -54,7 +54,7 @@ class Q10ViewController: UIViewController {
                 self.effectText.text = ""
             }
             else {
-                //alert please enter text
+                //alert
             }
         }
     }
