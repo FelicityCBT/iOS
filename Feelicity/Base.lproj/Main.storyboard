@@ -4128,13 +4128,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="275" height="353"/>
+                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323" width="46" height="30"/>
+                                        <rect key="frame" x="115" y="323" width="101" height="156"/>
                                         <state key="normal" title="OK"/>
                                     </button>
                                 </subviews>
@@ -4809,7 +4809,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWG-6X-Drb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3143.1999999999998" y="807.34632683658174"/>
+            <point key="canvasLocation" x="1398" y="1471"/>
         </scene>
         <!--Phy And Gad-->
         <scene sceneID="Rpz-VP-lrO">
@@ -4879,7 +4879,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiX-If-CZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3828" y="775.86206896551732"/>
+            <point key="canvasLocation" x="3926" y="1503"/>
         </scene>
         <!--Consent Form-->
         <scene sceneID="aWZ-e2-WzM">
@@ -5019,7 +5019,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti7-Pf-237" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4677.6000000000004" y="796.55172413793105"/>
+            <point key="canvasLocation" x="4922" y="781"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xQM-Lz-NTl">
