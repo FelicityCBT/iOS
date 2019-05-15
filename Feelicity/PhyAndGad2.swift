@@ -1,5 +1,5 @@
 //
-//  PhyAndGad.swift
+//  PhyAndGad2.swift
 //  Feelicity
 //
 //  Created by George Pu on 2/27/19.
@@ -11,10 +11,10 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class PhyAndGad: UIViewController {
+class PhyAndGad2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
     }
-
+    
 }
