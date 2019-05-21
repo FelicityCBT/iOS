@@ -22,6 +22,9 @@ class Q8ViewController: UIViewController {
     @IBOutlet weak var eating: UISwitch!
     @IBOutlet weak var shopping: UISwitch!
     @IBOutlet weak var substanceUse: UISwitch!
+    @IBOutlet weak var drinkingAlcohol: UISwitch!
+    @IBOutlet weak var smoking: UISwitch!
+    @IBOutlet weak var consumingDrugs: UISwitch!
     @IBOutlet weak var keepingBusy: UISwitch!
     
     // Outlet for the user input option
@@ -118,6 +121,26 @@ class Q8ViewController: UIViewController {
             Journal.current?.substanceUse = false
         }
         
+        if drinkingAlcohol.isOn {
+            Journal.current?.drinkingAlcohol = true
+        }
+        else {
+            Journal.current?.drinkingAlcohol = false
+        }
+        
+        if smoking.isOn {
+            Journal.current?.smoking = true
+        }
+        else {
+            Journal.current?.smoking = false
+        }
+        
+        if consumingDrugs.isOn {
+            Journal.current?.consumingDrugs = true
+        }
+        else {
+            Journal.current?.consumingDrugs = false
+        }
         if keepingBusy.isOn {
             Journal.current?.keepingBusy = true
         }

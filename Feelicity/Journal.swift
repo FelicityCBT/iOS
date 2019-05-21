@@ -48,6 +48,9 @@ class Journal: NSObject {
     var feelsLethargic: Bool = false
     var feelsVulnerable: Bool = false
     var feelsSensitive: Bool = false
+    var feelsPanic: Bool = false
+    var feelsFear: Bool = false
+    var feelsNervousness: Bool = false
     
     var angerPercentage1: Int = 50
     var hopelessnessPercentage2: Int = 50
@@ -60,6 +63,9 @@ class Journal: NSObject {
     var lethargicPercentage9: Int = 50
     var vulnerablePercentage10: Int = 50
     var sensitivePercentage11: Int = 50
+    var panicPercentage11: Int = 50
+    var fearPercentage12: Int = 50
+    var nervousnessPercentage13: Int = 50
     
     // George Added values for Q6
     var lossOfEnergy: Bool = false
@@ -82,6 +88,10 @@ class Journal: NSObject {
     var eating: Bool = false
     var shopping: Bool = false
     var substanceUse: Bool = false
+    // added things in place of substance abuse, not applied yet
+    var drinkingAlcohol: Bool = false
+    var smoking: Bool = false
+    var consumingDrugs: Bool = false
     var keepingBusy: Bool = false
     var otherMechanisms: String? = ""
     
@@ -92,8 +102,11 @@ class Journal: NSObject {
     var copingMech: String? = ""
     var alternativeCoping: String? = ""
     
-    var avoided: String? = ""
-    var prosCons: String? = ""
+    var avoided: [String] = []
+    var pros: [String] = []
+    var cons: [String] = []
+    //var avoided: String? = ""
+    //var prosCons: String? = ""
     
     var thoughts: [Thought] = [Thought]()
 //    var thoughtAction: String? = ""
@@ -121,7 +134,7 @@ class Journal: NSObject {
     var opinion: Bool = false
     
     var reshapeImage: String? = ""
-    var positives: String? = ""
+    var positives: [String] = []
     
     var believePreviousThought: Int = 50
     
@@ -129,8 +142,8 @@ class Journal: NSObject {
     var alternativeBelief: Int = 50
     
     var doneDifferently: String? = ""
-    var whatHelped: String? = ""
-    var whatDidnt: String? = ""
+    var whatHelped: [String] = [] //kimbo changed these two
+    var whatDidnt: [String] = []
     
     var feelsAngerPost: Bool = false
     var feelsHopelessnessPost: Bool = false
@@ -143,6 +156,9 @@ class Journal: NSObject {
     var feelsLethargicPost: Bool = false
     var feelsVulnerablePost: Bool = false
     var feelsSensitivePost: Bool = false
+    var feelsPanicPost: Bool = false
+    var feelsFearPost: Bool = false
+    var feelsNervousnessPost: Bool = false
     
     var angerPercentageReview1: Int = 50
     var hopelessnessPercentageReview2: Int = 50
@@ -155,6 +171,9 @@ class Journal: NSObject {
     var lethargicPercentageReview9: Int = 50
     var vulnerablePercentageReview10: Int = 50
     var sensitivePercentageReview11: Int = 50
+    var panicPercentageReview11: Int = 50
+    var fearPercentageReview12: Int = 50
+    var nervousnessPercentageReview13: Int = 50
     
     var postLoved: Bool = false
     var postHappy: Bool = false
