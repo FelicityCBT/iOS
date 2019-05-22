@@ -49,23 +49,23 @@
 		13DC1F9A21C1ADCA00695C6D /* NetworkActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC1F9921C1ADCA00695C6D /* NetworkActivityIndicatorManager.swift */; };
 		337E71F27B9BA5BB78FFD533 /* Pods_Feelicity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */; };
 		33D706AC64151B5E43B82044 /* Pods_FeelicityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */; };
+		5E0228F9228B96DE00E85A2A /* PhyAndGad1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0228F8228B96DE00E85A2A /* PhyAndGad1.swift */; };
+		5E0228FB228B96ED00E85A2A /* PhyAndGad2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0228FA228B96ED00E85A2A /* PhyAndGad2.swift */; };
+		5E0228FD228B96F700E85A2A /* PhyAndGad3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0228FC228B96F700E85A2A /* PhyAndGad3.swift */; };
+		5E0228FF228B970000E85A2A /* PhyAndGad4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0228FE228B970000E85A2A /* PhyAndGad4.swift */; };
+		5E022901228B9B8300E85A2A /* PhqAndGad5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E022900228B9B8300E85A2A /* PhqAndGad5.swift */; };
+		5E022903228B9B9200E85A2A /* PhqAndGad6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E022902228B9B9200E85A2A /* PhqAndGad6.swift */; };
+		5E022905228B9BA200E85A2A /* PhyAndGad7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E022904228B9BA200E85A2A /* PhyAndGad7.swift */; };
+		5E022907228B9BB200E85A2A /* PhqAndGad8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E022906228B9BB200E85A2A /* PhqAndGad8.swift */; };
+		5E022909228B9BBC00E85A2A /* PhqAndGad9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E022908228B9BBC00E85A2A /* PhqAndGad9.swift */; };
 		5E07E956223328E500081DFA /* PhqAndGad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E955223328E500081DFA /* PhqAndGad.swift */; };
 		5E07E958223328F400081DFA /* DemoSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E957223328F400081DFA /* DemoSurvey.swift */; };
 		5E07E95A2233290F00081DFA /* ConsentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E9592233290F00081DFA /* ConsentForm.swift */; };
 		5E07E95C22332FD300081DFA /* WelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E95B22332FD300081DFA /* WelView.swift */; };
-		5E07E9602234EBF700081DFA /* DemoSurvey_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E95F2234EBF700081DFA /* DemoSurvey_1.swift */; };
-		5E07E9622234EC0D00081DFA /* DemoSurvey_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E9612234EC0D00081DFA /* DemoSurvey_2.swift */; };
-		5E07E9642234EC2300081DFA /* DemoSurvey_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E9632234EC2300081DFA /* DemoSurvey_3.swift */; };
-		5E07E9682235F1BA00081DFA /* DemoSurvey_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E9672235F1BA00081DFA /* DemoSurvey_4.swift */; };
-		5E179DF52246EC4800EFAD08 /* PhyAndGad1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179DF42246EC4800EFAD08 /* PhyAndGad1.swift */; };
-		5E179DF72246F0F000EFAD08 /* PhyAndGad2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179DF62246F0F000EFAD08 /* PhyAndGad2.swift */; };
-		5E179DF92246F0FC00EFAD08 /* PhyAndGad3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179DF82246F0FC00EFAD08 /* PhyAndGad3.swift */; };
-		5E179DFB2246F12E00EFAD08 /* PhyAndGad4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179DFA2246F12E00EFAD08 /* PhyAndGad4.swift */; };
-		5E179DFD2246F24200EFAD08 /* PhyAndGad5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179DFC2246F24200EFAD08 /* PhyAndGad5.swift */; };
-		5E179DFF2246F25900EFAD08 /* PhyAndGad6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179DFE2246F25900EFAD08 /* PhyAndGad6.swift */; };
-		5E179E0122497BF200EFAD08 /* PhyAndGad7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179E0022497BF200EFAD08 /* PhyAndGad7.swift */; };
-		5E179E0322499E8B00EFAD08 /* PhyAndGad8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179E0222499E8B00EFAD08 /* PhyAndGad8.swift */; };
-		5E179E052249A1B600EFAD08 /* PhyAndGad9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E179E042249A1B600EFAD08 /* PhyAndGad9.swift */; };
+		5EB1BD352287FC1E00BE72E4 /* DemoSurvey1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1BD342287FC1E00BE72E4 /* DemoSurvey1.swift */; };
+		5EB1BD372287FC2900BE72E4 /* DemoSurvey2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1BD362287FC2900BE72E4 /* DemoSurvey2.swift */; };
+		5EB1BD392287FC3600BE72E4 /* DemoSurvey3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1BD382287FC3600BE72E4 /* DemoSurvey3.swift */; };
+		5EB1BD3B2287FC3F00BE72E4 /* DemoSurvey4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB1BD3A2287FC3F00BE72E4 /* DemoSurvey4.swift */; };
 		D4D8351E212752C500225736 /* PreMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8351D212752C500225736 /* PreMoodViewController.swift */; };
 		D4D83522212789AD00225736 /* Q1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D83521212789AD00225736 /* Q1ViewController.swift */; };
 		D4D8352421278CBA00225736 /* Q2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8352321278CBA00225736 /* Q2ViewController.swift */; };
@@ -143,23 +143,23 @@
 		13DC1F9921C1ADCA00695C6D /* NetworkActivityIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorManager.swift; sourceTree = "<group>"; };
 		1879F8FD42C5802E621C343E /* Pods-FeelicityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityTests/Pods-FeelicityTests.release.xcconfig"; sourceTree = "<group>"; };
 		40B1EF7E0305471429A9BAA8 /* Pods-FeelicityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityUITests/Pods-FeelicityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E0228F8228B96DE00E85A2A /* PhyAndGad1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad1.swift; sourceTree = "<group>"; };
+		5E0228FA228B96ED00E85A2A /* PhyAndGad2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad2.swift; sourceTree = "<group>"; };
+		5E0228FC228B96F700E85A2A /* PhyAndGad3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad3.swift; sourceTree = "<group>"; };
+		5E0228FE228B970000E85A2A /* PhyAndGad4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad4.swift; sourceTree = "<group>"; };
+		5E022900228B9B8300E85A2A /* PhqAndGad5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhqAndGad5.swift; sourceTree = "<group>"; };
+		5E022902228B9B9200E85A2A /* PhqAndGad6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhqAndGad6.swift; sourceTree = "<group>"; };
+		5E022904228B9BA200E85A2A /* PhyAndGad7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad7.swift; sourceTree = "<group>"; };
+		5E022906228B9BB200E85A2A /* PhqAndGad8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhqAndGad8.swift; sourceTree = "<group>"; };
+		5E022908228B9BBC00E85A2A /* PhqAndGad9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhqAndGad9.swift; sourceTree = "<group>"; };
 		5E07E955223328E500081DFA /* PhqAndGad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhqAndGad.swift; sourceTree = "<group>"; };
 		5E07E957223328F400081DFA /* DemoSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey.swift; sourceTree = "<group>"; };
 		5E07E9592233290F00081DFA /* ConsentForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentForm.swift; sourceTree = "<group>"; };
 		5E07E95B22332FD300081DFA /* WelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelView.swift; sourceTree = "<group>"; };
-		5E07E95F2234EBF700081DFA /* DemoSurvey_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey_1.swift; sourceTree = "<group>"; };
-		5E07E9612234EC0D00081DFA /* DemoSurvey_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey_2.swift; sourceTree = "<group>"; };
-		5E07E9632234EC2300081DFA /* DemoSurvey_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey_3.swift; sourceTree = "<group>"; };
-		5E07E9672235F1BA00081DFA /* DemoSurvey_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey_4.swift; sourceTree = "<group>"; };
-		5E179DF42246EC4800EFAD08 /* PhyAndGad1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad1.swift; sourceTree = "<group>"; };
-		5E179DF62246F0F000EFAD08 /* PhyAndGad2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad2.swift; sourceTree = "<group>"; };
-		5E179DF82246F0FC00EFAD08 /* PhyAndGad3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad3.swift; sourceTree = "<group>"; };
-		5E179DFA2246F12E00EFAD08 /* PhyAndGad4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad4.swift; sourceTree = "<group>"; };
-		5E179DFC2246F24200EFAD08 /* PhyAndGad5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad5.swift; sourceTree = "<group>"; };
-		5E179DFE2246F25900EFAD08 /* PhyAndGad6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad6.swift; sourceTree = "<group>"; };
-		5E179E0022497BF200EFAD08 /* PhyAndGad7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad7.swift; sourceTree = "<group>"; };
-		5E179E0222499E8B00EFAD08 /* PhyAndGad8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad8.swift; sourceTree = "<group>"; };
-		5E179E042249A1B600EFAD08 /* PhyAndGad9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyAndGad9.swift; sourceTree = "<group>"; };
+		5EB1BD342287FC1E00BE72E4 /* DemoSurvey1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey1.swift; sourceTree = "<group>"; };
+		5EB1BD362287FC2900BE72E4 /* DemoSurvey2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey2.swift; sourceTree = "<group>"; };
+		5EB1BD382287FC3600BE72E4 /* DemoSurvey3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey3.swift; sourceTree = "<group>"; };
+		5EB1BD3A2287FC3F00BE72E4 /* DemoSurvey4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurvey4.swift; sourceTree = "<group>"; };
 		75C30687E9CF337D69D524F2 /* Pods-Feelicity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelicity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity.debug.xcconfig"; sourceTree = "<group>"; };
 		B8A49CB094FCFB3B6972BF87 /* Pods-Feelicity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelicity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity.release.xcconfig"; sourceTree = "<group>"; };
 		BAB779971DBACD2B744F2510 /* Pods_FeelicityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeelicityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,22 +230,22 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
-				5E179DF42246EC4800EFAD08 /* PhyAndGad1.swift */,
-				5E179DF62246F0F000EFAD08 /* PhyAndGad2.swift */,
-				5E179DF82246F0FC00EFAD08 /* PhyAndGad3.swift */,
-				5E179DFA2246F12E00EFAD08 /* PhyAndGad4.swift */,
-				5E179DFC2246F24200EFAD08 /* PhyAndGad5.swift */,
-				5E179DFE2246F25900EFAD08 /* PhyAndGad6.swift */,
-				5E179E0022497BF200EFAD08 /* PhyAndGad7.swift */,
-				5E179E0222499E8B00EFAD08 /* PhyAndGad8.swift */,
-				5E179E042249A1B600EFAD08 /* PhyAndGad9.swift */,
+				5E022900228B9B8300E85A2A /* PhqAndGad5.swift */,
+				5E022902228B9B9200E85A2A /* PhqAndGad6.swift */,
+				5E022904228B9BA200E85A2A /* PhyAndGad7.swift */,
+				5E022906228B9BB200E85A2A /* PhqAndGad8.swift */,
+				5E022908228B9BBC00E85A2A /* PhqAndGad9.swift */,
+				5E0228F8228B96DE00E85A2A /* PhyAndGad1.swift */,
+				5E0228FA228B96ED00E85A2A /* PhyAndGad2.swift */,
+				5E0228FC228B96F700E85A2A /* PhyAndGad3.swift */,
+				5E0228FE228B970000E85A2A /* PhyAndGad4.swift */,
 				5E07E95B22332FD300081DFA /* WelView.swift */,
 				5E07E955223328E500081DFA /* PhqAndGad.swift */,
 				5E07E957223328F400081DFA /* DemoSurvey.swift */,
-				5E07E95F2234EBF700081DFA /* DemoSurvey_1.swift */,
-				5E07E9612234EC0D00081DFA /* DemoSurvey_2.swift */,
-				5E07E9632234EC2300081DFA /* DemoSurvey_3.swift */,
-				5E07E9672235F1BA00081DFA /* DemoSurvey_4.swift */,
+				5EB1BD342287FC1E00BE72E4 /* DemoSurvey1.swift */,
+				5EB1BD362287FC2900BE72E4 /* DemoSurvey2.swift */,
+				5EB1BD382287FC3600BE72E4 /* DemoSurvey3.swift */,
+				5EB1BD3A2287FC3F00BE72E4 /* DemoSurvey4.swift */,
 				5E07E9592233290F00081DFA /* ConsentForm.swift */,
 				138C13CB213613B20076A629 /* CognitiveDistortionsPopup.swift */,
 				138C13CD2136141A0076A629 /* ReferencesPopup.swift */,
@@ -588,15 +588,17 @@
 			files = (
 				1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */,
 				D4D8352621278DF400225736 /* Q3ViewController.swift in Sources */,
+				5EB1BD392287FC3600BE72E4 /* DemoSurvey3.swift in Sources */,
 				134F997C2124757300E10B6C /* Q19ViewController.swift in Sources */,
 				134F996E2124751600E10B6C /* Q12ViewController.swift in Sources */,
-				5E07E9642234EC2300081DFA /* DemoSurvey_3.swift in Sources */,
 				D4D8351E212752C500225736 /* PreMoodViewController.swift in Sources */,
 				135C7330212B3372001FEAA2 /* Thought.swift in Sources */,
-				5E179DF52246EC4800EFAD08 /* PhyAndGad1.swift in Sources */,
+				5E0228F9228B96DE00E85A2A /* PhyAndGad1.swift in Sources */,
+				5E022909228B9BBC00E85A2A /* PhqAndGad9.swift in Sources */,
 				134F99802124759800E10B6C /* EndViewController.swift in Sources */,
 				134F996C2124750200E10B6C /* Q11ViewController.swift in Sources */,
 				134F9966212474D900E10B6C /* Q8ViewController.swift in Sources */,
+				5E022907228B9BB200E85A2A /* PhqAndGad8.swift in Sources */,
 				13DC1F9621C1A82F00695C6D /* Crypto.swift in Sources */,
 				134F9968212474E700E10B6C /* Q9ViewController.swift in Sources */,
 				134F99702124752D00E10B6C /* Q13ViewController.swift in Sources */,
@@ -605,42 +607,40 @@
 				D4D83522212789AD00225736 /* Q1ViewController.swift in Sources */,
 				13919A042129EB7E009493ED /* emotionsCell.swift in Sources */,
 				134F99822125073200E10B6C /* User.swift in Sources */,
-				5E07E9622234EC0D00081DFA /* DemoSurvey_2.swift in Sources */,
+				5E022901228B9B8300E85A2A /* PhqAndGad5.swift in Sources */,
 				13919A08212A4017009493ED /* ViewController.swift in Sources */,
 				134F9964212474C900E10B6C /* Q7ViewController.swift in Sources */,
 				134F997A2124756600E10B6C /* Q18ViewController.swift in Sources */,
+				5E022903228B9B9200E85A2A /* PhqAndGad6.swift in Sources */,
 				134F997E2124758800E10B6C /* PostMoodViewController.swift in Sources */,
+				5EB1BD372287FC2900BE72E4 /* DemoSurvey2.swift in Sources */,
 				5E07E95C22332FD300081DFA /* WelView.swift in Sources */,
 				D4D8352821278F3100225736 /* Q4ViewController.swift in Sources */,
 				131743C421304EAD00FAA9C9 /* TAndCViewController.swift in Sources */,
-				5E179DFD2246F24200EFAD08 /* PhyAndGad5.swift in Sources */,
 				134F9984212513B900E10B6C /* Journal.swift in Sources */,
 				134F99782124755B00E10B6C /* Q17ViewController.swift in Sources */,
 				134F99762124754F00E10B6C /* Q16ViewController.swift in Sources */,
 				D4D8352A2127911600225736 /* Q5ViewController.swift in Sources */,
-				5E179DF92246F0FC00EFAD08 /* PhyAndGad3.swift in Sources */,
+				5E0228FD228B96F700E85A2A /* PhyAndGad3.swift in Sources */,
 				13919A062129EDA9009493ED /* Emotions.swift in Sources */,
+				5EB1BD352287FC1E00BE72E4 /* DemoSurvey1.swift in Sources */,
 				1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */,
-				5E179E0322499E8B00EFAD08 /* PhyAndGad8.swift in Sources */,
 				138C13CC213613B20076A629 /* CognitiveDistortionsPopup.swift in Sources */,
 				5E07E95A2233290F00081DFA /* ConsentForm.swift in Sources */,
-				5E179DFF2246F25900EFAD08 /* PhyAndGad6.swift in Sources */,
+				5EB1BD3B2287FC3F00BE72E4 /* DemoSurvey4.swift in Sources */,
 				5E07E958223328F400081DFA /* DemoSurvey.swift in Sources */,
-				5E07E9682235F1BA00081DFA /* DemoSurvey_4.swift in Sources */,
 				134F996A212474F500E10B6C /* Q10ViewController.swift in Sources */,
+				5E0228FB228B96ED00E85A2A /* PhyAndGad2.swift in Sources */,
 				5E07E956223328E500081DFA /* PhqAndGad.swift in Sources */,
-				5E179DF72246F0F000EFAD08 /* PhyAndGad2.swift in Sources */,
 				134F99742124754300E10B6C /* Q15ViewController.swift in Sources */,
+				5E0228FF228B970000E85A2A /* PhyAndGad4.swift in Sources */,
 				1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */,
-				5E179DFB2246F12E00EFAD08 /* PhyAndGad4.swift in Sources */,
 				131743C2212F7F4500FAA9C9 /* Q20ViewController.swift in Sources */,
 				134F9962212474A800E10B6C /* Q6ViewController.swift in Sources */,
+				5E022905228B9BA200E85A2A /* PhyAndGad7.swift in Sources */,
 				138C305420898577006D4129 /* AppDelegate.swift in Sources */,
-				5E179E0122497BF200EFAD08 /* PhyAndGad7.swift in Sources */,
 				134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */,
-				5E179E052249A1B600EFAD08 /* PhyAndGad9.swift in Sources */,
 				138C13CE2136141A0076A629 /* ReferencesPopup.swift in Sources */,
-				5E07E9602234EBF700081DFA /* DemoSurvey_1.swift in Sources */,
 				D4D8352421278CBA00225736 /* Q2ViewController.swift in Sources */,
 				13DC1F9A21C1ADCA00695C6D /* NetworkActivityIndicatorManager.swift in Sources */,
 			);
