@@ -12,6 +12,19 @@ import Firebase
 import FirebaseDatabase
 
 class DemoSurvey2: UIViewController {
+    
+    /* Button tracking for diagnosed treatment */
+    @IBOutlet weak var yesTreatment: UISwitch!
+    @IBOutlet weak var noTreatment: UISwitch!
+    @IBOutlet weak var preferTreatment: UISwitch!
+    
+    /* If yes, history button tracker */
+    @IBOutlet weak var haveReceivedTreatment: UISwitch!
+    @IBOutlet weak var currentlyReceivingTreatment: UISwitch!
+    @IBOutlet weak var neverReceivedTreatment: UISwitch!
+    @IBOutlet weak var preferHistoryTreatment: UISwitch!
+    
+    
     override func viewDidLoad() {
         
         // 3

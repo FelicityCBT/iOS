@@ -4128,13 +4128,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="275" height="353"/>
+                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323" width="46" height="30"/>
+                                        <rect key="frame" x="115" y="323" width="101" height="156"/>
                                         <state key="normal" title="OK"/>
                                     </button>
                                 </subviews>
@@ -4985,6 +4985,21 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4hD-nY-2p1"/>
                     </view>
+                    <connections>
+                        <outlet property="AsianRace" destination="3pe-mg-EyG" id="xoT-qx-uZb"/>
+                        <outlet property="africanAmericanRace" destination="EJb-wr-yqR" id="4yT-ZY-qZy"/>
+                        <outlet property="ageVal" destination="ixc-ZT-sQ3" id="rPi-FU-5Gr"/>
+                        <outlet property="femaleGender" destination="xwG-FJ-bpU" id="kFJ-fK-a4r"/>
+                        <outlet property="hispanicRace" destination="tSZ-q4-Dqw" id="H4g-pQ-8cR"/>
+                        <outlet property="maleGender" destination="vxL-Wa-zwU" id="JZV-Mh-zz1"/>
+                        <outlet property="nativeAmericanRace" destination="PH5-LH-MUJ" id="jS4-r3-C95"/>
+                        <outlet property="noRace" destination="ISj-2E-8ee" id="G5i-gu-tjd"/>
+                        <outlet property="noneAge" destination="xAO-T1-Y6I" id="b5q-un-i2N"/>
+                        <outlet property="noneGender" destination="EZJ-jC-Haa" id="d1Z-i6-gdF"/>
+                        <outlet property="otherGender" destination="UOd-dB-lA3" id="mkw-Bn-dFa"/>
+                        <outlet property="otherRace" destination="VGA-wI-FvG" id="Y6t-BZ-dkh"/>
+                        <outlet property="whiteRace" destination="qdm-Bm-FTy" id="rCT-q6-yRz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWG-6X-Drb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5157,6 +5172,19 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wSl-Tb-9AE"/>
                     </view>
+                    <connections>
+                        <outlet property="freshYear" destination="gAg-4f-d5n" id="tnd-ZD-4RG"/>
+                        <outlet property="juniorYear" destination="HRa-gL-kKn" id="jcO-ta-xQ0"/>
+                        <outlet property="noColl" destination="gln-VD-Sxe" id="7z3-bI-4yb"/>
+                        <outlet property="noYear" destination="wiZ-Kz-V6M" id="6k9-RN-DsW"/>
+                        <outlet property="prefStudent" destination="t3a-FK-eZ6" id="Ta8-dZ-avY"/>
+                        <outlet property="prefYear" destination="fGr-0h-zzb" id="Ekb-d9-Ymf"/>
+                        <outlet property="seniorYear" destination="VGS-M4-p0p" id="b4f-sa-GX4"/>
+                        <outlet property="sophoYear" destination="iC6-5k-rfA" id="fFh-Kc-y5e"/>
+                        <outlet property="superSeniorYear" destination="cF1-hh-L6W" id="65g-ok-X8s"/>
+                        <outlet property="yesAnother" destination="MNq-o4-q5U" id="50R-mU-yPR"/>
+                        <outlet property="yesUcsd" destination="7xk-HC-zYJ" id="bxk-H6-hEX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgX-aC-6A1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5227,6 +5255,10 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IOR-E2-wAg"/>
                     </view>
+                    <connections>
+                        <outlet property="noContinue" destination="14U-40-kYF" id="HVB-sr-q3y"/>
+                        <outlet property="yesContinue" destination="rE0-yC-olY" id="7B9-CF-vdF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiX-If-CZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5370,7 +5402,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti7-Pf-237" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11844" y="774"/>
+            <point key="canvasLocation" x="670" y="1468"/>
         </scene>
         <!--Phy And Gad1-->
         <scene sceneID="TQy-PW-Img">
@@ -5513,6 +5545,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="l4M-bT-8yt"/>
                     </view>
+                    <connections>
+                        <outlet property="everyDown" destination="OcH-Tf-XIs" id="gaD-gI-Gmz"/>
+                        <outlet property="everyInterest" destination="Ecl-4A-zog" id="0lk-Hv-ZPV"/>
+                        <outlet property="moreDown" destination="sp6-md-TmA" id="3C4-8l-CYD"/>
+                        <outlet property="moreInterest" destination="ZXM-yt-sfa" id="XsT-eJ-FaT"/>
+                        <outlet property="notFeelingDown" destination="0T7-ZJ-uR1" id="UhR-Vc-fz1"/>
+                        <outlet property="notInterest" destination="ypI-Gm-eck" id="JF0-HH-rvp"/>
+                        <outlet property="severalDown" destination="0yI-UV-4YR" id="xlp-fm-EYA"/>
+                        <outlet property="severalInterest" destination="cbx-86-kEJ" id="xC7-2x-YXl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhS-p4-NAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5652,6 +5694,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IlJ-a4-8vP"/>
                     </view>
+                    <connections>
+                        <outlet property="everyAsleep" destination="Hfa-70-sSd" id="EkV-WC-eSq"/>
+                        <outlet property="everyTired" destination="pN8-A8-TYQ" id="rnY-Jo-VyP"/>
+                        <outlet property="moreAsleep" destination="vJD-qs-fqf" id="LCN-K5-zhS"/>
+                        <outlet property="moreTired" destination="nVR-bK-qVb" id="Lch-pp-bsk"/>
+                        <outlet property="notAsleep" destination="3c8-zm-014" id="DSc-am-1Gh"/>
+                        <outlet property="notTired" destination="TuW-3I-sF8" id="WjS-Yt-tqs"/>
+                        <outlet property="severalAsleep" destination="aLP-mu-9xq" id="8S4-Ew-I2n"/>
+                        <outlet property="severalTired" destination="shF-c9-Jgg" id="iwR-Rj-dGx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khO-hF-VX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5791,6 +5843,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lFP-qI-Mk5"/>
                     </view>
+                    <connections>
+                        <outlet property="everyAppetite" destination="jfh-AX-kdP" id="IuT-HD-ZpK"/>
+                        <outlet property="everyBad" destination="Hyd-y2-UwC" id="Wjm-s4-ffa"/>
+                        <outlet property="moreAppetite" destination="gN4-am-b3p" id="XOY-Jt-b7D"/>
+                        <outlet property="moreBad" destination="Ta9-Bi-Qhz" id="0YI-3W-M7t"/>
+                        <outlet property="notAppetite" destination="2qK-70-kci" id="nJC-5D-Vwh"/>
+                        <outlet property="notBad" destination="0TZ-CG-Ege" id="9R8-Yq-JGo"/>
+                        <outlet property="severalAppetite" destination="dbW-Gu-gO1" id="br7-XQ-HVw"/>
+                        <outlet property="severalBad" destination="jLk-ye-hzu" id="ETd-xc-dbh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wc-bK-kgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5937,6 +5999,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HhY-dk-5uS"/>
                     </view>
+                    <connections>
+                        <outlet property="everyConcentrating" destination="kHV-gz-TDz" id="qT4-ns-O2Q"/>
+                        <outlet property="everyMoving" destination="WDC-FO-jB8" id="SWu-Ir-FPN"/>
+                        <outlet property="moreConcentrating" destination="fl7-Bk-ezo" id="Nx3-Al-xPJ"/>
+                        <outlet property="moreMoving" destination="Au5-CA-hnx" id="jGF-X3-S06"/>
+                        <outlet property="notConcentrating" destination="Iyd-dS-TuY" id="tcY-En-Fk8"/>
+                        <outlet property="notMoving" destination="Wdp-Xh-TBD" id="lJJ-xa-oXg"/>
+                        <outlet property="severalConcentrating" destination="emX-ge-QXg" id="wC8-vE-r1s"/>
+                        <outlet property="severalMoving" destination="0Dw-4t-Gzj" id="MxY-OW-8mk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGd-C4-ubO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6076,6 +6148,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v0Y-Mz-ih9"/>
                     </view>
+                    <connections>
+                        <outlet property="everyNervous" destination="IUW-fj-DwX" id="MX4-YM-rnw"/>
+                        <outlet property="everyThoughts" destination="8F3-Sm-C8a" id="op6-zF-QwY"/>
+                        <outlet property="moreNervous" destination="pLo-xd-ucV" id="GIA-Sn-JR4"/>
+                        <outlet property="moreThoughts" destination="TzN-Av-1tV" id="1QR-Ve-H94"/>
+                        <outlet property="noThoughts" destination="NRQ-9M-XjJ" id="21c-Oy-yOE"/>
+                        <outlet property="notNervous" destination="5a8-FH-52w" id="Gyd-2P-rGD"/>
+                        <outlet property="severalNervous" destination="wfm-qD-0qG" id="THH-Zx-y1L"/>
+                        <outlet property="severalThoughts" destination="YBr-qu-yVt" id="htB-I2-6D6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkd-YR-vDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6215,6 +6297,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8nb-Qt-xdL"/>
                     </view>
+                    <connections>
+                        <outlet property="everyStop" destination="vpo-GI-HbW" id="6ow-Gb-JcR"/>
+                        <outlet property="everyWorrying" destination="5YE-or-QVV" id="2WS-1F-y2m"/>
+                        <outlet property="moreStop" destination="WCh-LJ-tig" id="gie-5G-Yfb"/>
+                        <outlet property="moreWorrying" destination="1Rp-8C-Q3z" id="POL-Kv-5G1"/>
+                        <outlet property="notStop" destination="ata-TR-Dba" id="hqO-WN-CxV"/>
+                        <outlet property="notWorrying" destination="m9G-XH-jIi" id="3oS-2y-9ZT"/>
+                        <outlet property="severalStop" destination="XoE-AS-P74" id="FFC-Zn-9bH"/>
+                        <outlet property="severalWorrying" destination="g3x-bc-Ova" id="Wjb-UQ-TBM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MwN-M9-NLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6354,15 +6446,25 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pG9-I7-IbM"/>
                     </view>
+                    <connections>
+                        <outlet property="everyRelaxing" destination="Vio-wJ-0b1" id="dVW-l9-x6w"/>
+                        <outlet property="everyRestless" destination="0Hy-9a-9mf" id="Dbe-rg-W64"/>
+                        <outlet property="moreRelaxing" destination="rEe-ag-sbp" id="ELg-ii-qhX"/>
+                        <outlet property="moreRestless" destination="O44-MP-Gbc" id="SzZ-3g-jQP"/>
+                        <outlet property="noRelaxing" destination="hsc-rn-mou" id="xuD-NL-KmQ"/>
+                        <outlet property="notRestless" destination="Ahg-06-zDc" id="VqF-lJ-sgX"/>
+                        <outlet property="severalRelaxing" destination="mfN-pY-Evo" id="cVO-bp-Xyk"/>
+                        <outlet property="severalRestless" destination="eAB-ip-KYV" id="ID6-LJ-Zez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfU-9f-JF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7692" y="788"/>
         </scene>
-        <!--Phy And Gad8-->
+        <!--Phq And Gad8-->
         <scene sceneID="RRh-2u-SfL">
             <objects>
-                <viewController id="Zc4-mS-BBA" customClass="PhyAndGad8" sceneMemberID="viewController">
+                <viewController id="Zc4-mS-BBA" customClass="PhqAndGad8" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3QV-Ga-LId">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6493,6 +6595,16 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Mk-iq-uKM"/>
                     </view>
+                    <connections>
+                        <outlet property="everyAfraid" destination="vqA-sf-i4N" id="XJv-aM-qRk"/>
+                        <outlet property="everyAnnoyed" destination="UAs-IV-0nE" id="V2X-LD-Ygg"/>
+                        <outlet property="moreAfraid" destination="Vh5-o1-LH2" id="qgN-ZM-HcM"/>
+                        <outlet property="moreAnnoyed" destination="eI0-iR-Q8z" id="taR-cS-Ss8"/>
+                        <outlet property="notAfraid" destination="Tuk-N3-m61" id="mqW-5U-Mxb"/>
+                        <outlet property="notAnnoyed" destination="awQ-pR-KQ5" id="J8w-5W-sS8"/>
+                        <outlet property="severalAfraid" destination="nDC-ZT-0aR" id="Xne-Kx-i0a"/>
+                        <outlet property="severalAnnoyed" destination="CIM-Eo-LfA" id="kI4-jt-aUo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5vh-mZ-KFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6614,24 +6726,18 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XDU-TM-krA"/>
                     </view>
+                    <connections>
+                        <outlet property="cancelPhq" destination="x1o-3m-h7X" id="Oot-g6-tI4"/>
+                        <outlet property="everyCheck" destination="Py0-5Q-zbe" id="xeL-Ob-a4T"/>
+                        <outlet property="moreCheck" destination="jlx-xp-Uec" id="Myt-jq-4a6"/>
+                        <outlet property="notCheck" destination="e56-nY-Oxn" id="gJI-ef-Xdy"/>
+                        <outlet property="severalCheck" destination="vHU-WO-RVx" id="ghv-0C-SX7"/>
+                        <outlet property="submitPhq" destination="Rkz-UT-NZu" id="stY-ah-ejT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foA-BM-qjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9079" y="785"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xQM-Lz-NTl">
-            <objects>
-                <viewController id="JRF-hp-I0u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lPK-eo-IZm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Fp5-v2-DSB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aMv-PQ-2xI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
         <!--Demo Survey2-->
         <scene sceneID="Uft-5e-VQ5">
@@ -6756,6 +6862,15 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dhu-Bs-HfT"/>
                     </view>
+                    <connections>
+                        <outlet property="currentlyReceivingTreatment" destination="Nns-yC-ho2" id="zgD-qn-Zmc"/>
+                        <outlet property="haveReceivedTreatment" destination="7bO-8J-yU8" id="B6w-8p-eUh"/>
+                        <outlet property="neverReceivedTreatment" destination="lxq-GR-nU4" id="99t-7M-jGD"/>
+                        <outlet property="noTreatment" destination="TT3-p6-glJ" id="z43-R4-ekV"/>
+                        <outlet property="preferHistoryTreatment" destination="Krj-CB-Vcg" id="7An-iS-6Z0"/>
+                        <outlet property="preferTreatment" destination="XvN-xh-t6q" id="oga-C3-jYF"/>
+                        <outlet property="yesTreatment" destination="Dcm-Sm-cwm" id="Hue-QR-DBx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gy6-jB-XCH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -6851,6 +6966,12 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CnP-tV-Ih5"/>
                     </view>
+                    <connections>
+                        <outlet property="medicationTreatment" destination="tro-nI-jMt" id="x8i-sh-FkE"/>
+                        <outlet property="otherMentalTreatment" destination="2at-VN-Ldc" id="7Ek-pZ-B2S"/>
+                        <outlet property="preferHealthTreatment" destination="iXA-Yr-Nso" id="F00-cu-Xap"/>
+                        <outlet property="psychotherapyTreatment" destination="Aky-f1-6j0" id="dP9-3r-vn7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJs-Hz-dOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

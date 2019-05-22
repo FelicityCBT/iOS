@@ -12,6 +12,24 @@ import Firebase
 import FirebaseDatabase
 
 class PhqAndGad5: UIViewController {
+    
+    /* Question 9 */
+    
+    @IBOutlet weak var noThoughts: UISwitch!
+    @IBOutlet weak var severalThoughts: UISwitch!
+    
+    @IBOutlet weak var moreThoughts: UISwitch!
+    @IBOutlet weak var everyThoughts: UISwitch!
+    
+    
+    /* Question 10 */
+    @IBOutlet weak var notNervous: UISwitch!
+    @IBOutlet weak var severalNervous: UISwitch!
+    @IBOutlet weak var moreNervous: UISwitch!
+    @IBOutlet weak var everyNervous: UISwitch!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

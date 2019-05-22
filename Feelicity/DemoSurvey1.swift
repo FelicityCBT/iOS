@@ -12,6 +12,28 @@ import Firebase
 import FirebaseDatabase
 
 class DemoSurvey1: UIViewController {
+    
+    /* Button tracker for if a college student */
+    @IBOutlet weak var yesUcsd: UISwitch!
+    @IBOutlet weak var yesColl: UISwitch!
+    @IBOutlet weak var noColl: UISwitch!
+    @IBOutlet weak var prefStudent: UISwitch!
+    
+    /* Enrolled in college button tracker */
+    @IBOutlet weak var freshYear: UISwitch!
+    @IBOutlet weak var sophoYear: UISwitch!
+    @IBOutlet weak var juniorYear: UISwitch!
+    @IBOutlet weak var seniorYear: UISwitch!
+    @IBOutlet weak var superSeniorYear: UISwitch!
+    @IBOutlet weak var noYear: UISwitch!
+    @IBOutlet weak var prefYear: UISwitch!
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         
         // 3

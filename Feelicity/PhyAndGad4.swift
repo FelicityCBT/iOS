@@ -12,6 +12,20 @@ import Firebase
 import FirebaseDatabase
 
 class PhyAndGad4: UIViewController {
+    /* Question 7 */
+    @IBOutlet weak var notConcentrating: UISwitch!
+    @IBOutlet weak var severalConcentrating: UISwitch!
+    @IBOutlet weak var moreConcentrating: UISwitch!
+    @IBOutlet weak var everyConcentrating: UISwitch!
+    
+    /* Question 8 */
+    @IBOutlet weak var notMoving: UISwitch!
+    @IBOutlet weak var severalMoving: UISwitch!
+    @IBOutlet weak var moreMoving: UISwitch!
+    @IBOutlet weak var everyMoving: UISwitch!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

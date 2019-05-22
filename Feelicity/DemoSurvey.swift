@@ -12,6 +12,26 @@ import Firebase
 import FirebaseDatabase
 
 class DemoSurvey: UIViewController {
+    /* Question number 1 buttons */
+    @IBOutlet weak var femaleGender: UISwitch!
+    @IBOutlet weak var maleGender: UISwitch!
+    @IBOutlet weak var otherGender: UISwitch!
+    @IBOutlet weak var prefGender: UISwitch!
+    
+    /* Question number 2 for button tracking */
+    @IBOutlet weak var ageVal: UISwitch!
+    @IBOutlet weak var prefAge: UISwitch!
+    
+    /* Quesstion number 3 for button tracking and indexing */
+    @IBOutlet weak var whiteRace: UISwitch!
+    @IBOutlet weak var hispanicRace: UISwitch!
+    @IBOutlet weak var africanAmericanRace: UISwitch!
+    @IBOutlet weak var nativeAmericanRace: UISwitch!
+    @IBOutlet weak var AsianRace: UISwitch!
+    @IBOutlet weak var otherRace: UISwitch!
+    @IBOutlet weak var prefRace: UISwitch!
+    
+    
     override func viewDidLoad() {
         
         // 3

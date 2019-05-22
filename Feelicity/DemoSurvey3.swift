@@ -12,6 +12,13 @@ import Firebase
 import FirebaseDatabase
 
 class DemoSurvey3: UIViewController {
+    /* Button for final demo survey questionaire */
+    @IBOutlet weak var medicationTreatment: UISwitch!
+    
+    @IBOutlet weak var psychotherapyTreatment: UISwitch!
+    @IBOutlet weak var otherMentalTreatment: UISwitch!
+    @IBOutlet weak var preferHealthTreatment: UISwitch!
+    
     override func viewDidLoad() {
         
         // 3

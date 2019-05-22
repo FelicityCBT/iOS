@@ -12,6 +12,18 @@ import Firebase
 import FirebaseDatabase
 
 class PhqAndGad9: UIViewController {
+    /* Question 17 */
+    @IBOutlet weak var notCheck: UISwitch!
+    @IBOutlet weak var severalCheck: UISwitch!
+    @IBOutlet weak var moreCheck: UISwitch!
+    @IBOutlet weak var everyCheck: UISwitch!
+    
+    /* Final Phq and Gad */
+    @IBOutlet weak var submitPhq: UIButton!
+    @IBOutlet weak var cancelPhq: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
