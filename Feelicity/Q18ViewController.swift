@@ -24,6 +24,9 @@ class Q18ViewController: UIViewController {
     @IBOutlet weak var lethargic: UIButton!
     @IBOutlet weak var vulnerable: UIButton!
     @IBOutlet weak var sensitive: UIButton!
+    @IBOutlet weak var panic: UIButton!
+    @IBOutlet weak var fear: UIButton!
+    @IBOutlet weak var nervousness: UIButton!
     
     
     override func viewDidLoad() {
@@ -104,6 +107,24 @@ class Q18ViewController: UIViewController {
         guard let currentJournal = Journal.current else {return} // safely unwrap journal
         currentJournal.feelsSensitivePost = !currentJournal.feelsSensitivePost
         sensitive.backgroundColor = currentJournal.feelsSensitivePost ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func panicClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsPanicPost = !currentJournal.feelsPanicPost
+        panic.backgroundColor = currentJournal.feelsPanicPost ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func fearClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsFearPost = !currentJournal.feelsFearPost
+        fear.backgroundColor = currentJournal.feelsFearPost ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func nervousnessClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsNervousnessPost = !currentJournal.feelsNervousnessPost
+        nervousness.backgroundColor = currentJournal.feelsNervousnessPost ? UIColor.gray : UIColor.lightGray
     }
     
     @IBAction func Q18(_ sender: Any) {

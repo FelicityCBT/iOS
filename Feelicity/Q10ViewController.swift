@@ -5,7 +5,6 @@
 //  Created by Sonal Prasad on 8/15/18.
 //  Copyright © 2018 Feelicity. All rights reserved.
 //
-
 import Foundation
 import UIKit
 import Firebase
@@ -54,7 +53,7 @@ class Q10ViewController: UIViewController {
                 self.effectText.text = ""
             }
             else {
-                //alert please enter text
+                //alert
             }
         }
     }
@@ -64,6 +63,6 @@ class Q10ViewController: UIViewController {
     }
     
     
-
+    
     
 }

@@ -25,6 +25,9 @@ class  Q4ViewController: UIViewController {
     @IBOutlet weak var IrritationButton: UIButton!
     @IBOutlet weak var VulnerableButton: UIButton!
     @IBOutlet weak var SensitiveButton: UIButton!
+    @IBOutlet weak var PanicButton: UIButton!
+    @IBOutlet weak var FearButton: UIButton!
+    @IBOutlet weak var NervousnessButton: UIButton!
     
     
     @IBAction func feelsangerClicked(_ sender: UIButton) {
@@ -92,6 +95,25 @@ class  Q4ViewController: UIViewController {
         currentJournal.feelsSensitive = !currentJournal.feelsSensitive
         SensitiveButton.backgroundColor = currentJournal.feelsSensitive ? UIColor.gray : UIColor.lightGray
     }
+    
+    @IBAction func feelspanicClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsPanic = !currentJournal.feelsPanic
+        PanicButton.backgroundColor = currentJournal.feelsPanic ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsfearClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsFear = !currentJournal.feelsFear
+        FearButton.backgroundColor = currentJournal.feelsFear ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsnervousnessClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsNervousness = !currentJournal.feelsNervousness
+        NervousnessButton.backgroundColor = currentJournal.feelsNervousness ? UIColor.gray : UIColor.lightGray
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 8

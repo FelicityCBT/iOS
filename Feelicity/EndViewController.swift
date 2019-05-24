@@ -206,8 +206,9 @@ class EndViewController: UIViewController {
                // Unnecessary        "behaviorInfluence": (Journal.current?.behaviorInfluence)! as String,
                        "copingMech": (Journal.current?.copingMech)! as String,
                        "alternativeCoping": (Journal.current?.alternativeCoping)! as String,
-                       "avoided": (Journal.current?.avoided)! as String,
-                       "prosCons": (Journal.current?.prosCons)! as String,
+                       "avoided": (Journal.current?.avoided)! as [String], //before just String
+                       "pros": (Journal.current?.pros)! as [String],
+                       "cons": (Journal.current?.cons)! as [String], //added cons since it seperated from pros
                        "thoughtsAndActions": thoughtsDictionary ,
                        "factual": (Journal.current?.factual)! as Bool,
                        "exaggeration": (Journal.current?.exaggeration)! as Bool,
@@ -227,13 +228,13 @@ class EndViewController: UIViewController {
                        "fact": (Journal.current?.fact)! as Bool,
                        "opinion": (Journal.current?.opinion)! as Bool,
                        "reshapeImage": (Journal.current?.reshapeImage)! as String,
-                       "positives": (Journal.current?.positives)! as String,
+                       "positives": (Journal.current?.positives)! as [String], //changed from String
                        "believePreviousThought": (Journal.current?.believePreviousThought)! as Int,
                        "alternativeView": (Journal.current?.alternativeView)! as String,
                        "alternativeBelief": (Journal.current?.alternativeBelief)! as Int,
                        "doneDifferently": (Journal.current?.doneDifferently)! as String,
-                       "whatHelped": (Journal.current?.whatHelped)! as String,
-                       "whatDidnt": (Journal.current?.whatDidnt)! as String,
+                       "whatHelped": (Journal.current?.whatHelped)! as [String], // changed this and below
+                       "whatDidnt": (Journal.current?.whatDidnt)! as [String],
                        "feelsAngerPost": (Journal.current?.feelsAngerPost)! as Bool,
                        "feelsHopelessnessPost": (Journal.current?.feelsHopelessnessPost)! as Bool,
                        "feelsEmptinessPost": (Journal.current?.feelsEmptinessPost)! as Bool,
