@@ -38,4 +38,51 @@ class DemoSurvey2: UIViewController {
         // 5
         navigationItem.titleView = imageView
     }
+    
+    @IBAction func next(_ sender: Any) {
+        if yesTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if noTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if preferTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if haveReceivedTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if currentlyReceivingTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if neverReceivedTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if preferTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        
+    }
+    
 }

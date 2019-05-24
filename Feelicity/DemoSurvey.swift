@@ -45,4 +45,93 @@ class DemoSurvey: UIViewController {
         // 5
         navigationItem.titleView = imageView
     }
+    
+    @IBAction func next(_ sender: Any) {
+        if femaleGender.isOn {
+            Journal.current?.otherMechanisms = ""
+        } else {
+            Journal.current?.otherMechanisms = ""
+        }
+        
+        if maleGender.isOn {
+            Journal.current?.seekingSocialSupport = true
+        }
+        else {
+            Journal.current?.seekingSocialSupport = false
+        }
+        
+        if otherGender.isOn {
+            Journal.current?.reappraisingSituation = true
+        }
+        else {
+            Journal.current?.reappraisingSituation = false
+        }
+        
+        if prefGender.isOn {
+            Journal.current?.solvingProblem = true
+        }
+        else {
+            Journal.current?.solvingProblem = false
+        }
+        
+        if ageVal.isOn {
+            Journal.current?.acceptingSituation = true
+        }
+        else {
+            Journal.current?.acceptingSituation = false
+        }
+        
+        if prefAge.isOn {
+            Journal.current?.exercising = true
+        }
+        else {
+            Journal.current?.exercising = false
+        }
+        
+        if whiteRace.isOn {
+            Journal.current?.eating = true
+        }
+        else {
+            Journal.current?.eating = false
+        }
+        
+        if hispanicRace.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if africanAmericanRace.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if nativeAmericanRace.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if AsianRace.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if otherRace.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if prefRace.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        
+    }
+    
 }

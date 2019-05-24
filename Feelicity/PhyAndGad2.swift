@@ -32,4 +32,63 @@ class PhyAndGad2: UIViewController {
         
     }
     
+    @IBAction func next(_ sender: Any) {
+        
+        if notAsleep.isOn {
+            Journal.current?.otherMechanisms = ""
+        } else {
+            Journal.current?.otherMechanisms = ""
+        }
+        
+        if severalAsleep.isOn {
+            Journal.current?.seekingSocialSupport = true
+        }
+        else {
+            Journal.current?.seekingSocialSupport = false
+        }
+        
+        if moreAsleep.isOn {
+            Journal.current?.reappraisingSituation = true
+        }
+        else {
+            Journal.current?.reappraisingSituation = false
+        }
+        
+        if everyAsleep.isOn {
+            Journal.current?.solvingProblem = true
+        }
+        else {
+            Journal.current?.solvingProblem = false
+        }
+        
+        if notTired.isOn {
+            Journal.current?.acceptingSituation = true
+        }
+        else {
+            Journal.current?.acceptingSituation = false
+        }
+        
+        if severalTired.isOn {
+            Journal.current?.exercising = true
+        }
+        else {
+            Journal.current?.exercising = false
+        }
+        
+        if moreTired.isOn {
+            Journal.current?.eating = true
+        }
+        else {
+            Journal.current?.eating = false
+        }
+        
+        if everyTired.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+    }
+    
+    
 }

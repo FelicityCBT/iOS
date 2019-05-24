@@ -32,4 +32,33 @@ class DemoSurvey3: UIViewController {
         // 5
         navigationItem.titleView = imageView
     }
+    @IBAction func next(_ sender: Any) {
+        if medicationTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if psychotherapyTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if otherMentalTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        if preferHealthTreatment.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+        
+    }
+    
+    
 }

@@ -29,4 +29,34 @@ class PhqAndGad9: UIViewController {
         
     }
     
+    @IBAction func submit(_ sender: Any) {
+        if notCheck.isOn {
+            Journal.current?.otherMechanisms = ""
+        } else {
+            Journal.current?.otherMechanisms = ""
+        }
+        
+        if severalCheck.isOn {
+            Journal.current?.seekingSocialSupport = true
+        }
+        else {
+            Journal.current?.seekingSocialSupport = false
+        }
+        
+        if moreCheck.isOn {
+            Journal.current?.reappraisingSituation = true
+        }
+        else {
+            Journal.current?.reappraisingSituation = false
+        }
+        
+        if everyCheck.isOn {
+            Journal.current?.solvingProblem = true
+        }
+        else {
+            Journal.current?.solvingProblem = false
+        }
+        
+       
+    }
 }

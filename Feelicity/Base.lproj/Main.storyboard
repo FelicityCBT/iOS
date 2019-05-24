@@ -4980,6 +4980,9 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                     <constraint firstAttribute="height" constant="50" id="fND-py-fiy"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="ijz-a3-Acl" eventType="touchUpInside" id="N1m-QR-9ZA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5167,6 +5170,9 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                     <constraint firstAttribute="height" constant="50" id="xc2-1i-GHu"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="NLT-tF-z9a" eventType="touchUpInside" id="SjX-9o-GNG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5540,6 +5546,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="beQ-Ew-GSG"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="945-dV-Frr" eventType="touchUpInside" id="MoZ-KB-8F7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5689,6 +5698,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="NiL-GF-esU"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="Aes-Cg-080" eventType="touchUpInside" id="GDo-NL-cdR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5838,6 +5850,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="width" constant="50" id="nOs-r7-9qA"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="nedxt:" destination="0id-Pa-48c" eventType="touchUpInside" id="VNf-ax-293"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5994,6 +6009,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="k6g-ts-RQV"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="q3t-tI-oT1" eventType="touchUpInside" id="xws-kv-6Zi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6143,6 +6161,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="width" constant="50" id="KfR-z8-4jM"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="uWP-do-3L3" eventType="touchUpInside" id="gLq-dP-r1s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6292,6 +6313,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="eqW-fV-yki"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="v3y-9B-Ha7" eventType="touchUpInside" id="Pug-bV-XHd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6441,6 +6465,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="l0U-H6-9XQ"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="nedx:" destination="nsy-Xq-t5B" eventType="touchUpInside" id="iDX-W1-7LZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6583,6 +6610,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="6kj-aM-COA"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="Zc4-mS-BBA" eventType="touchUpInside" id="3QX-T3-CTx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nearly every day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3a-N8-ZjV">
                                 <rect key="frame" x="98" y="488" width="238" height="21"/>
@@ -6721,6 +6751,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit:" destination="JHP-oS-GRZ" eventType="touchUpInside" id="tvo-XD-LVu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6857,6 +6890,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="ncw-9D-7il"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="ae9-W4-zJS" eventType="touchUpInside" id="elK-Ck-E2n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6961,6 +6997,9 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                     <constraint firstAttribute="height" constant="50" id="Z8E-hN-yld"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="next:" destination="gZs-9E-5Oo" eventType="touchUpInside" id="t6w-EW-91w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -30,5 +30,61 @@ class PhqAndGad6: UIViewController {
         super.viewDidLoad()
         
     }
+    @IBAction func next(_ sender: Any) {
+        if notStop.isOn {
+            Journal.current?.otherMechanisms = ""
+        } else {
+            Journal.current?.otherMechanisms = ""
+        }
+        
+        if severalStop.isOn {
+            Journal.current?.seekingSocialSupport = true
+        }
+        else {
+            Journal.current?.seekingSocialSupport = false
+        }
+        
+        if moreStop.isOn {
+            Journal.current?.reappraisingSituation = true
+        }
+        else {
+            Journal.current?.reappraisingSituation = false
+        }
+        
+        if everyStop.isOn {
+            Journal.current?.solvingProblem = true
+        }
+        else {
+            Journal.current?.solvingProblem = false
+        }
+        
+        if notWorrying.isOn {
+            Journal.current?.acceptingSituation = true
+        }
+        else {
+            Journal.current?.acceptingSituation = false
+        }
+        
+        if severalWorrying.isOn {
+            Journal.current?.exercising = true
+        }
+        else {
+            Journal.current?.exercising = false
+        }
+        
+        if moreWorrying.isOn {
+            Journal.current?.eating = true
+        }
+        else {
+            Journal.current?.eating = false
+        }
+        
+        if everyWorrying.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
+    }
     
 }

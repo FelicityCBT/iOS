@@ -32,7 +32,65 @@ class PhqAndGad5: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func next(_ sender: Any) {
+        if noThoughts.isOn {
+            Journal.current?.otherMechanisms = ""
+        } else {
+            Journal.current?.otherMechanisms = ""
+        }
+        
+        if severalThoughts.isOn {
+            Journal.current?.seekingSocialSupport = true
+        }
+        else {
+            Journal.current?.seekingSocialSupport = false
+        }
+        
+        if moreThoughts.isOn {
+            Journal.current?.reappraisingSituation = true
+        }
+        else {
+            Journal.current?.reappraisingSituation = false
+        }
+        
+        if everyThoughts.isOn {
+            Journal.current?.solvingProblem = true
+        }
+        else {
+            Journal.current?.solvingProblem = false
+        }
+        
+        if notNervous.isOn {
+            Journal.current?.acceptingSituation = true
+        }
+        else {
+            Journal.current?.acceptingSituation = false
+        }
+        
+        if severalNervous.isOn {
+            Journal.current?.exercising = true
+        }
+        else {
+            Journal.current?.exercising = false
+        }
+        
+        if moreNervous.isOn {
+            Journal.current?.eating = true
+        }
+        else {
+            Journal.current?.eating = false
+        }
+        
+        if everyNervous.isOn {
+            Journal.current?.shopping = true
+        }
+        else {
+            Journal.current?.shopping = false
+        }
         
     }
+    
     
 }
