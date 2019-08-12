@@ -16,7 +16,7 @@ class PhyAndGad2: UIViewController {
     @IBOutlet weak var notAsleep: UISwitch!
     @IBOutlet weak var severalAsleep: UISwitch!
     @IBOutlet weak var moreAsleep: UISwitch!
-    
+
     @IBOutlet weak var everyAsleep: UISwitch!
     
     /* Question 4 */
@@ -33,62 +33,40 @@ class PhyAndGad2: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
-        
+        // 4th question
         if notAsleep.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.troubleFallingAsleep = "not at all"
         }
         
         if severalAsleep.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.troubleFallingAsleep = "several days"
         }
         
         if moreAsleep.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.troubleFallingAsleep = "more than half"
         }
         
         if everyAsleep.isOn {
-            Journal.current?.solvingProblem = true
+            Journal.current?.troubleFallingAsleep = "nearly everyday"
         }
-        else {
-            Journal.current?.solvingProblem = false
-        }
-        
+       
+        // 5th question
         if notTired.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            Journal.current?.feelingTired = "not at all"
         }
         
         if severalTired.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.feelingTired = "several days"
         }
         
         if moreTired.isOn {
-            Journal.current?.eating = true
-        }
-        else {
-            Journal.current?.eating = false
+            Journal.current?.feelingTired = "more than half"
         }
         
         if everyTired.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.feelingTired = "nearly everyday"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        
     }
-    
     
 }

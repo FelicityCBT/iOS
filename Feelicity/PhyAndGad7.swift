@@ -30,59 +30,38 @@ class PhyAndGad7: UIViewController {
         
     }
     @IBAction func next(_ sender: Any) {
+        // 13th question
         if noRelaxing.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.troubleRelaxing = "not at all"
         }
         
         if severalRelaxing.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.troubleRelaxing = "several days"
         }
         
         if moreRelaxing.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.troubleRelaxing = "more than half"
         }
         
         if everyRelaxing.isOn {
-            Journal.current?.solvingProblem = true
-        }
-        else {
-            Journal.current?.solvingProblem = false
+            Journal.current?.troubleRelaxing = "nearly everyday"
         }
         
+        // 14th question
         if notRestless.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            Journal.current?.beingRestless = "not at all"
         }
         
         if severalRestless.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.beingRestless = "several days"
         }
         
         if moreRestless.isOn {
-            Journal.current?.eating = true
-        }
-        else {
-            Journal.current?.eating = false
+            Journal.current?.beingRestless = "more than half"
         }
         
         if everyRestless.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
+            Journal.current?.beingRestless = "nearly everyday"
         }
     }
     

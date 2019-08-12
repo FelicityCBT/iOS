@@ -6238,7 +6238,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <action selector="nedxt:" destination="0id-Pa-48c" eventType="touchUpInside" id="VNf-ax-293"/>
+                                    <action selector="next:" destination="0id-Pa-48c" eventType="touchUpInside" id="H0s-nk-dhc"/>
                                     <segue destination="q3t-tI-oT1" kind="show" id="xht-q0-nNT"/>
                                 </connections>
                             </button>
@@ -6857,7 +6857,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <action selector="nedx:" destination="nsy-Xq-t5B" eventType="touchUpInside" id="iDX-W1-7LZ"/>
+                                    <action selector="next:" destination="nsy-Xq-t5B" eventType="touchUpInside" id="lh8-Gc-u1D"/>
                                     <segue destination="Zc4-mS-BBA" kind="show" id="hwB-oG-gy6"/>
                                 </connections>
                             </button>
@@ -7127,6 +7127,10 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelPhq:" destination="JHP-oS-GRZ" eventType="touchUpInside" id="hRo-Fj-GzI"/>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="Kpy-jC-4M6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkz-UT-NZu">
                                 <rect key="frame" x="199" y="607" width="130" height="30"/>
@@ -7146,6 +7150,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="submit:" destination="JHP-oS-GRZ" eventType="touchUpInside" id="tvo-XD-LVu"/>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="dv4-iM-Euf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -7163,7 +7168,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foA-BM-qjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9079" y="785"/>
+            <point key="canvasLocation" x="9108" y="797"/>
         </scene>
         <!--Demo Survey2-->
         <scene sceneID="Uft-5e-VQ5">
@@ -7384,16 +7389,46 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBp-FJ-80D">
-                                <rect key="frame" x="299" y="597" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xw3-uf-du3">
+                                <rect key="frame" x="43" y="617" width="130" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="10u-sR-oFy"/>
-                                    <constraint firstAttribute="height" constant="50" id="Z8E-hN-yld"/>
+                                    <constraint firstAttribute="height" constant="30" id="5cB-8C-YZQ"/>
+                                    <constraint firstAttribute="width" constant="130" id="LAz-Ho-fnJ"/>
                                 </constraints>
-                                <state key="normal" image="Arrow"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="next:" destination="gZs-9E-5Oo" eventType="touchUpInside" id="t6w-EW-91w"/>
-                                    <segue destination="iHS-WX-Qkd" kind="show" id="gZH-kh-0yR"/>
+                                    <action selector="cancelDemo:" destination="gZs-9E-5Oo" eventType="touchUpInside" id="i3L-gT-TWd"/>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="pjA-BE-HR6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9e-8C-ILB">
+                                <rect key="frame" x="202" y="617" width="130" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="TwR-tJ-JZq"/>
+                                    <constraint firstAttribute="height" constant="30" id="lcs-i5-wKg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="next:" destination="gZs-9E-5Oo" eventType="touchUpInside" id="wFK-Vp-aqy"/>
+                                    <segue destination="iHS-WX-Qkd" kind="show" id="fdQ-0F-xfs"/>
                                 </connections>
                             </button>
                         </subviews>

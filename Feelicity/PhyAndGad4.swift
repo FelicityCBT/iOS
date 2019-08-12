@@ -31,61 +31,40 @@ class PhyAndGad4: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
-        
+        // 7th question
         if notConcentrating.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.troubleConcentrating = "not at all"
         }
         
         if severalConcentrating.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.troubleConcentrating = "several days"
         }
         
         if moreConcentrating.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.troubleConcentrating = "more than half"
         }
         
         if everyConcentrating.isOn {
-            Journal.current?.solvingProblem = true
-        }
-        else {
-            Journal.current?.solvingProblem = false
+            Journal.current?.troubleConcentrating = "nearly everyday"
         }
         
+        // 8th question
         if notMoving.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            Journal.current?.movingSlowly = "not at all"
         }
         
         if severalMoving.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.movingSlowly = "several days"
         }
         
         if moreMoving.isOn {
-            Journal.current?.eating = true
-        }
-        else {
-            Journal.current?.eating = false
+            Journal.current?.movingSlowly = "more than half"
         }
         
         if everyMoving.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.movingSlowly = "nearly everyday"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+      
         
     }
     

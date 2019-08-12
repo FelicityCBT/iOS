@@ -106,7 +106,28 @@ class Journal: NSObject {
     var diagnosedAndTreatment: String? = ""
     var currentlyReceivingTreatment: String? = ""
     
+    // Values for the PHQ and GAD Survey
+    var littleInterestThings: String? = ""
+    var feelingDown: String? = ""
+    var troubleFallingAsleep: String? = ""
+    var feelingTired: String? = ""
+    var poorAppetite: String? = ""
+    var feelingBadAboutSelf: String? = ""
+    var troubleConcentrating: String? = ""
+    var movingSlowly: String? = ""
+    var thoughtSuicidal: String? = ""
+    var feelingOnEdge: String? = ""
+    var uncontrolledWorrying: String? = ""
+    var worryingAboutDiffStuff: String? = ""
+    var troubleRelaxing: String? = ""
+    var beingRestless: String? = ""
+    var becomingEasilyAnnoyed: String? = ""
+    var feelingAfraid: String? = ""
+    var levelOfDifficulty: String? = ""
     
+    // Confirmation for Demo && Phq + Gad
+    var userAcceptDemo: Bool? = true
+    var userAcceptPhqAndGad: Bool? = true
     
     var behavior: String? = ""
     var behaviorInfluence: String? = ""
@@ -115,13 +136,9 @@ class Journal: NSObject {
     var avoided: [String] = []
     var pros: [String] = []
     var cons: [String] = []
-    //var avoided: String? = ""
-    //var prosCons: String? = ""
-    
+
     var thoughts: [Thought] = [Thought]()
-//    var thoughtAction: String? = ""
-//    var effect: String? = ""
-    
+
     var factual: Bool = false
     var exaggeration: Bool = false
     

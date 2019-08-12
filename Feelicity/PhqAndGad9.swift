@@ -21,8 +21,7 @@ class PhqAndGad9: UIViewController {
     /* Final Phq and Gad */
     @IBOutlet weak var submitPhq: UIButton!
     @IBOutlet weak var cancelPhq: UIButton!
-    
-    
+    var checker = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,33 +29,38 @@ class PhqAndGad9: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
+        // 16th question
         if notCheck.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.feelingAfraid = "not at all"
         }
         
         if severalCheck.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.feelingAfraid = "several days"
         }
         
         if moreCheck.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.feelingAfraid = "more than half"
         }
         
         if everyCheck.isOn {
-            Journal.current?.solvingProblem = true
+            Journal.current?.feelingAfraid = "nearly everyday"
         }
-        else {
-            Journal.current?.solvingProblem = false
+        Journal.current?.userAcceptPhqAndGad = true
+    }
+    @IBAction func cancelPhq(_ sender: Any) {
+        if checker == false {
+            alertUser(message: "Are you sure you want to leave?")
+            checker = true
         }
+        Journal.current?.userAcceptPhqAndGad = false
+        checker = false
+    }
+    
+    func alertUser(message: String) {
+        let alert = UIAlertController(title: "Cancelling Phq and Gad Survey", message: message, preferredStyle: .alert)
         
-       
+        alert.addAction(UIAlertAction(title: "I do", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
     }
 }

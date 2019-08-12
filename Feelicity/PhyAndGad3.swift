@@ -33,61 +33,40 @@ class PhyAndGad3: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
-        
+        // 5th question
         if notAppetite.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.poorAppetite = "not at all"
         }
         
         if severalAppetite.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.poorAppetite = "several days"
         }
         
         if moreAppetite.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.poorAppetite = "more than half"
         }
         
         if everyAppetite.isOn {
-            Journal.current?.solvingProblem = true
-        }
-        else {
-            Journal.current?.solvingProblem = false
+            Journal.current?.poorAppetite = "nearly everyday"
         }
         
+        // 6th question
         if notBad.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            Journal.current?.feelingBadAboutSelf = "not at all"
         }
         
         if severalBad.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.feelingBadAboutSelf = "several days"
         }
         
         if moreBad.isOn {
-            Journal.current?.eating = true
-        }
-        else {
-            Journal.current?.eating = false
+            Journal.current?.feelingBadAboutSelf = "more than half"
         }
         
         if everyBad.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.feelingBadAboutSelf = "nearly everyday"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+      
     }
     
     

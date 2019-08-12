@@ -31,65 +31,39 @@ class PhyAndGad1: UIViewController {
         
     }
     @IBAction func next(_ sender: Any) {
-        
+        // 1st question
         if notInterest.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.littleInterestThings = "not at all"
         }
         
         if severalInterest.isOn {
-            Journal.current?.seekingSocialSupport = true
+            Journal.current?.littleInterestThings = "several days"
         }
-        else {
-            Journal.current?.seekingSocialSupport = false
-        }
-        
+       
         if moreInterest.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.littleInterestThings = "more than half"
         }
         
         if everyInterest.isOn {
-            Journal.current?.solvingProblem = true
+            Journal.current?.littleInterestThings = "nearly everyday"
         }
-        else {
-            Journal.current?.solvingProblem = false
-        }
-        
+       
+        // 2nd question
         if notFeelingDown.isOn {
-            Journal.current?.acceptingSituation = true
+            Journal.current?.feelingDown = "not at all"
         }
-        else {
-            Journal.current?.acceptingSituation = false
-        }
-        
+      
         if severalDown.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.feelingDown = "several days"
         }
         
         if moreDown.isOn {
-            Journal.current?.eating = true
-        }
-        else {
-            Journal.current?.eating = false
+            Journal.current?.feelingDown = "more than half"
         }
         
         if everyDown.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.feelingDown = "nearly everyday"
         }
-        else {
-            Journal.current?.shopping = false
-        }
-        
-        
-        
         
     }
-    
 }

@@ -31,60 +31,40 @@ class PhqAndGad6: UIViewController {
         
     }
     @IBAction func next(_ sender: Any) {
+        // 11th question
         if notStop.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.uncontrolledWorrying = "not at all"
         }
         
         if severalStop.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.uncontrolledWorrying = "several days"
         }
         
         if moreStop.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.uncontrolledWorrying = "more than half"
         }
         
         if everyStop.isOn {
-            Journal.current?.solvingProblem = true
-        }
-        else {
-            Journal.current?.solvingProblem = false
+            Journal.current?.uncontrolledWorrying = "nearly everyday"
         }
         
+        // 12th question
         if notWorrying.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            Journal.current?.worryingAboutDiffStuff = "not at all"
         }
         
         if severalWorrying.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.worryingAboutDiffStuff = "several days"
         }
         
         if moreWorrying.isOn {
-            Journal.current?.eating = true
-        }
-        else {
-            Journal.current?.eating = false
+            Journal.current?.worryingAboutDiffStuff = "more than half"
         }
         
         if everyWorrying.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.worryingAboutDiffStuff = "nearly everyday"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+      
     }
     
 }

@@ -35,61 +35,41 @@ class PhqAndGad5: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
+        
+        // 9th question
         if noThoughts.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.thoughtSuicidal = "not at all"
         }
         
         if severalThoughts.isOn {
-            Journal.current?.seekingSocialSupport = true
-        }
-        else {
-            Journal.current?.seekingSocialSupport = false
+            Journal.current?.thoughtSuicidal = "several days"
         }
         
         if moreThoughts.isOn {
-            Journal.current?.reappraisingSituation = true
-        }
-        else {
-            Journal.current?.reappraisingSituation = false
+            Journal.current?.thoughtSuicidal = "more than half"
         }
         
         if everyThoughts.isOn {
-            Journal.current?.solvingProblem = true
+            Journal.current?.thoughtSuicidal = "nearly everyday"
         }
-        else {
-            Journal.current?.solvingProblem = false
-        }
-        
+    
+        // 10th question
         if notNervous.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            Journal.current?.feelingOnEdge = "not at all"
         }
         
         if severalNervous.isOn {
-            Journal.current?.exercising = true
-        }
-        else {
-            Journal.current?.exercising = false
+            Journal.current?.feelingOnEdge = "several days"
         }
         
         if moreNervous.isOn {
-            Journal.current?.eating = true
+            Journal.current?.feelingOnEdge = "more than half"
         }
-        else {
-            Journal.current?.eating = false
-        }
+        
         
         if everyNervous.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.feelingOnEdge = "nearly everyday"
         }
-        else {
-            Journal.current?.shopping = false
-        }
-        
     }
     
     

@@ -20,6 +20,8 @@ class DemoSurvey3: UIViewController {
     @IBOutlet weak var preferHealthTreatment: UISwitch!
     @IBOutlet weak var otherText: UITextView!
     
+    var checker = false
+    
     override func viewDidLoad() {
         
        super.viewDidLoad()
@@ -42,7 +44,23 @@ class DemoSurvey3: UIViewController {
         if preferHealthTreatment.isOn {
             Journal.current?.currentlyReceivingTreatment = "none"
         }
+         Journal.current?.userAcceptDemo = true
     }
     
+    @IBAction func cancelDemo(_ sender: Any) {
+        if checker == false {
+            alertUser(message: "Are you sure you want to leave?")
+            checker = true
+        }
+        Journal.current?.userAcceptDemo = false
+        checker = false
+    }
     
+    func alertUser(message: String) {
+        let alert = UIAlertController(title: "Cancelling Demo Survey", message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "I do", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
 }
