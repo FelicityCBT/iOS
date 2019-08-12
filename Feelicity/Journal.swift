@@ -88,6 +88,7 @@ class Journal: NSObject {
     var eating: Bool = false
     var shopping: Bool = false
     var substanceUse: Bool = false
+    
     // added things in place of substance abuse, not applied yet
     var drinkingAlcohol: Bool = false
     var smoking: Bool = false
@@ -95,13 +96,22 @@ class Journal: NSObject {
     var keepingBusy: Bool = false
     var otherMechanisms: String? = ""
     
+    // Values for the Demographic Survey
+    var gender: String? = ""
+    var age: Int? = 0
+    var raceEthnicity: String? = ""
+    var collegeStudent: String? = ""
+    var currentlyEnrolled: String? = ""
+    var diagnosedBefore: String? = ""
+    var diagnosedAndTreatment: String? = ""
+    var currentlyReceivingTreatment: String? = ""
+    
+    
     
     var behavior: String? = ""
     var behaviorInfluence: String? = ""
-    
     var copingMech: String? = ""
     var alternativeCoping: String? = ""
-    
     var avoided: [String] = []
     var pros: [String] = []
     var cons: [String] = []

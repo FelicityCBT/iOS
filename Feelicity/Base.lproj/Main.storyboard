@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2XY-Qd-Hf9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2XY-Qd-Hf9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -4495,13 +4495,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="275" height="353"/>
+                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323" width="46" height="30"/>
+                                        <rect key="frame" x="115" y="323.5" width="101" height="155.5"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4687,7 +4687,7 @@
                                 <state key="normal" title="Accept"/>
                                 <connections>
                                     <action selector="acceptedTAnC:" destination="5vU-M0-PXQ" eventType="touchUpInside" id="BpQ-p9-wla"/>
-                                    <segue destination="4Mn-mH-7FG" kind="show" id="E22-Eb-ZNj"/>
+                                    <segue destination="e0e-vc-oJ3" kind="show" id="oWk-SZ-r1z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-nx-0ro">
@@ -5125,6 +5125,9 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                             <constraint firstAttribute="height" constant="50" id="qmq-BL-G9T"/>
                                         </constraints>
                                         <state key="normal" image="Arrow"/>
+                                        <connections>
+                                            <segue destination="6DB-qe-yNh" kind="show" id="eDE-0y-H0X"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-r5-4Wa">
                                         <rect key="frame" x="26" y="50" width="323" height="61"/>
@@ -5146,7 +5149,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qnl-aJ-WbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2329" y="797"/>
+            <point key="canvasLocation" x="-57" y="1470"/>
         </scene>
         <!--Demo Survey-->
         <scene sceneID="AIy-Eu-Vm3">
@@ -5348,6 +5351,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="next:" destination="ijz-a3-Acl" eventType="touchUpInside" id="N1m-QR-9ZA"/>
+                                    <segue destination="NLT-tF-z9a" kind="show" id="QAy-02-O77"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -5357,16 +5361,18 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                     <connections>
                         <outlet property="AsianRace" destination="3pe-mg-EyG" id="xoT-qx-uZb"/>
                         <outlet property="africanAmericanRace" destination="EJb-wr-yqR" id="4yT-ZY-qZy"/>
+                        <outlet property="ageText" destination="K31-YU-ViF" id="ZaF-dv-i40"/>
                         <outlet property="ageVal" destination="ixc-ZT-sQ3" id="rPi-FU-5Gr"/>
                         <outlet property="femaleGender" destination="xwG-FJ-bpU" id="kFJ-fK-a4r"/>
                         <outlet property="hispanicRace" destination="tSZ-q4-Dqw" id="H4g-pQ-8cR"/>
                         <outlet property="maleGender" destination="vxL-Wa-zwU" id="JZV-Mh-zz1"/>
                         <outlet property="nativeAmericanRace" destination="PH5-LH-MUJ" id="jS4-r3-C95"/>
-                        <outlet property="noRace" destination="ISj-2E-8ee" id="G5i-gu-tjd"/>
-                        <outlet property="noneAge" destination="xAO-T1-Y6I" id="b5q-un-i2N"/>
-                        <outlet property="noneGender" destination="EZJ-jC-Haa" id="d1Z-i6-gdF"/>
                         <outlet property="otherGender" destination="UOd-dB-lA3" id="mkw-Bn-dFa"/>
-                        <outlet property="otherRace" destination="VGA-wI-FvG" id="Y6t-BZ-dkh"/>
+                        <outlet property="otherRace" destination="VGA-wI-FvG" id="agc-Y4-mlq"/>
+                        <outlet property="otherText" destination="zCg-aV-Swo" id="7R5-kz-1so"/>
+                        <outlet property="prefAge" destination="xAO-T1-Y6I" id="520-St-hId"/>
+                        <outlet property="prefGender" destination="EZJ-jC-Haa" id="8qT-Ag-B0h"/>
+                        <outlet property="prefRace" destination="ISj-2E-8ee" id="fnZ-8H-pMS"/>
                         <outlet property="whiteRace" destination="qdm-Bm-FTy" id="rCT-q6-yRz"/>
                     </connections>
                 </viewController>
@@ -5538,6 +5544,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="next:" destination="NLT-tF-z9a" eventType="touchUpInside" id="SjX-9o-GNG"/>
+                                    <segue destination="ae9-W4-zJS" kind="show" id="jAS-pc-10h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -5554,7 +5561,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                         <outlet property="seniorYear" destination="VGS-M4-p0p" id="b4f-sa-GX4"/>
                         <outlet property="sophoYear" destination="iC6-5k-rfA" id="fFh-Kc-y5e"/>
                         <outlet property="superSeniorYear" destination="cF1-hh-L6W" id="65g-ok-X8s"/>
-                        <outlet property="yesAnother" destination="MNq-o4-q5U" id="50R-mU-yPR"/>
+                        <outlet property="yesColl" destination="MNq-o4-q5U" id="5M9-HP-2PW"/>
                         <outlet property="yesUcsd" destination="7xk-HC-zYJ" id="bxk-H6-hEX"/>
                     </connections>
                 </viewController>
@@ -5592,7 +5599,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="945-dV-Frr" kind="show" id="0Pm-Cl-Kl4"/>
+                                    <segue destination="945-dV-Frr" kind="show" id="frn-RP-Yqd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHQ and GAD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-d4-OoO">
@@ -5626,7 +5633,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="4Mn-mH-7FG" kind="show" id="731-ep-ThU"/>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="VYA-8n-OHC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -5640,7 +5647,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiX-If-CZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="797"/>
+            <point key="canvasLocation" x="2487" y="797"/>
         </scene>
         <!--Consent Form-->
         <scene sceneID="aWZ-e2-WzM">
@@ -5681,6 +5688,9 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ijz-a3-Acl" kind="show" id="HvG-Ac-OND"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-FK-g5b">
                                 <rect key="frame" x="203" y="603" width="130" height="30"/>
@@ -5698,6 +5708,9 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="LI1-xm-EoL"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-I8-1OB">
                                 <rect key="frame" x="21" y="94" width="333" height="443"/>
@@ -5920,7 +5933,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="next:" destination="945-dV-Frr" eventType="touchUpInside" id="MoZ-KB-8F7"/>
-                                    <segue destination="Aes-Cg-080" kind="show" id="3mf-DX-tUy"/>
+                                    <segue destination="Aes-Cg-080" kind="show" id="4en-IJ-kWI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -5940,7 +5953,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhS-p4-NAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3713" y="797"/>
+            <point key="canvasLocation" x="3426" y="795"/>
         </scene>
         <!--Phy And Gad2-->
         <scene sceneID="AyY-z9-YME">
@@ -6073,7 +6086,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="next:" destination="Aes-Cg-080" eventType="touchUpInside" id="GDo-NL-cdR"/>
-                                    <segue destination="0id-Pa-48c" kind="show" id="Law-kJ-gtF"/>
+                                    <segue destination="0id-Pa-48c" kind="show" id="DKp-Uh-t22"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -7272,6 +7285,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="next:" destination="ae9-W4-zJS" eventType="touchUpInside" id="elK-Ck-E2n"/>
+                                    <segue destination="gZs-9E-5Oo" kind="show" id="ILc-k8-XV5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -7379,6 +7393,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                                 <state key="normal" image="Arrow"/>
                                 <connections>
                                     <action selector="next:" destination="gZs-9E-5Oo" eventType="touchUpInside" id="t6w-EW-91w"/>
+                                    <segue destination="iHS-WX-Qkd" kind="show" id="gZH-kh-0yR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -7388,6 +7403,7 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                     <connections>
                         <outlet property="medicationTreatment" destination="tro-nI-jMt" id="x8i-sh-FkE"/>
                         <outlet property="otherMentalTreatment" destination="2at-VN-Ldc" id="7Ek-pZ-B2S"/>
+                        <outlet property="otherText" destination="Yt5-ZU-f2B" id="aMO-nB-lTI"/>
                         <outlet property="preferHealthTreatment" destination="iXA-Yr-Nso" id="F00-cu-Xap"/>
                         <outlet property="psychotherapyTreatment" destination="Aky-f1-6j0" id="dP9-3r-vn7"/>
                     </connections>
@@ -7461,6 +7477,9 @@ You will now be directed to our</string>
                                     <constraint firstAttribute="height" constant="50" id="xdc-1B-zgp"/>
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <segue destination="0TI-Lg-i2G" kind="show" id="mdG-Vd-Ud1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -7490,7 +7509,7 @@ You will now be directed to our</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
-        <segue reference="731-ep-ThU"/>
-        <segue reference="adA-9h-ZFA"/>
+        <segue reference="o4w-li-vs1"/>
+        <segue reference="8uP-pC-YDv"/>
     </inferredMetricsTieBreakers>
 </document>

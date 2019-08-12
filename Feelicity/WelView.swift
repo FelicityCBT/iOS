@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class WelView: UIViewController {
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         
     }
     @IBAction func clickLink(_ sender: Any) {

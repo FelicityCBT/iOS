@@ -21,6 +21,9 @@ class DemoSurvey: UIViewController {
     /* Question number 2 for button tracking */
     @IBOutlet weak var ageVal: UISwitch!
     @IBOutlet weak var prefAge: UISwitch!
+    @IBOutlet weak var ageText: UITextView!
+    @IBOutlet weak var otherText: UITextView!
+    
     
     /* Quesstion number 3 for button tracking and indexing */
     @IBOutlet weak var whiteRace: UISwitch!
@@ -34,103 +37,72 @@ class DemoSurvey: UIViewController {
     
     override func viewDidLoad() {
         
-        // 3
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        
-        // 4
-        let image = UIImage(named: "SunIcon")
-        imageView.image = image
-        
-        // 5
-        navigationItem.titleView = imageView
+        super.viewDidLoad()
     }
     
     @IBAction func next(_ sender: Any) {
+        // First Question
         if femaleGender.isOn {
-            Journal.current?.otherMechanisms = ""
-        } else {
-            Journal.current?.otherMechanisms = ""
+            Journal.current?.gender = "female"
         }
         
         if maleGender.isOn {
-            Journal.current?.seekingSocialSupport = true
+            Journal.current?.gender = "male"
         }
-        else {
-            Journal.current?.seekingSocialSupport = false
-        }
+      
         
         if otherGender.isOn {
-            Journal.current?.reappraisingSituation = true
+            Journal.current?.gender = "other"
         }
-        else {
-            Journal.current?.reappraisingSituation = false
-        }
+
         
         if prefGender.isOn {
-            Journal.current?.solvingProblem = true
+            Journal.current?.gender = "no say"
         }
-        else {
-            Journal.current?.solvingProblem = false
-        }
-        
+
+        // Second Question
         if ageVal.isOn {
-            Journal.current?.acceptingSituation = true
-        }
-        else {
-            Journal.current?.acceptingSituation = false
+            if (ageText.text != nil) {
+                Journal.current?.age = Int(ageText.text)
+            }
         }
         
         if prefAge.isOn {
-            Journal.current?.exercising = true
+            Journal.current?.age = 0
         }
-        else {
-            Journal.current?.exercising = false
-        }
-        
+
+        // Third Question
         if whiteRace.isOn {
-            Journal.current?.eating = true
+            Journal.current?.raceEthnicity = "white"
         }
-        else {
-            Journal.current?.eating = false
-        }
+       
         
         if hispanicRace.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.raceEthnicity = "hispanic"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if africanAmericanRace.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.raceEthnicity = "african american"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if nativeAmericanRace.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.raceEthnicity = "native american"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if AsianRace.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.raceEthnicity = "asian"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        
         if otherRace.isOn {
-            Journal.current?.shopping = true
+            if otherText.text != nil {
+                Journal.current?.raceEthnicity = otherText.text
+            }
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if prefRace.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.raceEthnicity = "none"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         
     }
     

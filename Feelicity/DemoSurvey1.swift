@@ -29,96 +29,58 @@ class DemoSurvey1: UIViewController {
     @IBOutlet weak var prefYear: UISwitch!
     
     
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         
-        // 3
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        
-        // 4
-        let image = UIImage(named: "SunIcon")
-        imageView.image = image
-        
-        // 5
-        navigationItem.titleView = imageView
+        super.viewDidLoad()
     }
     
     @IBAction func next(_ sender: Any) {
-        
+        // Question 4
         if yesUcsd.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.collegeStudent = "yes, ucsd"
         }
-        else {
-            Journal.current?.shopping = false
-        }
-        
+       
         if yesColl.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.collegeStudent = "yes, college"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+    
         
         if noColl.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.collegeStudent = "no, college"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+      
         if prefStudent.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.collegeStudent = "none"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
+        // Question 5
         if freshYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if sophoYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if juniorYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if seniorYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if superSeniorYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if noYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if prefYear.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
+            Journal.current?.currentlyEnrolled = "freshman"
         }
         
+        if sophoYear.isOn {
+             Journal.current?.currentlyEnrolled = "sophomore"
+        }
+       
+        if juniorYear.isOn {
+             Journal.current?.currentlyEnrolled = "junior"
+        }
+        
+        if seniorYear.isOn {
+             Journal.current?.currentlyEnrolled = "senior"
+        }
+        
+        if superSeniorYear.isOn {
+             Journal.current?.currentlyEnrolled = "super senior"
+        }
+       
+        if noYear.isOn {
+             Journal.current?.currentlyEnrolled = "not applicable"
+        }
+       
+        if prefYear.isOn {
+             Journal.current?.currentlyEnrolled = "none"
+        }
         
     }
     

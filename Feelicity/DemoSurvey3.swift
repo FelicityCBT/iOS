@@ -18,46 +18,30 @@ class DemoSurvey3: UIViewController {
     @IBOutlet weak var psychotherapyTreatment: UISwitch!
     @IBOutlet weak var otherMentalTreatment: UISwitch!
     @IBOutlet weak var preferHealthTreatment: UISwitch!
+    @IBOutlet weak var otherText: UITextView!
     
     override func viewDidLoad() {
         
-        // 3
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        
-        // 4
-        let image = UIImage(named: "SunIcon")
-        imageView.image = image
-        
-        // 5
-        navigationItem.titleView = imageView
+       super.viewDidLoad()
     }
     @IBAction func next(_ sender: Any) {
         if medicationTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.currentlyReceivingTreatment = "medications"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+
         if psychotherapyTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.currentlyReceivingTreatment = "psychotherapy"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if otherMentalTreatment.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
-        }
-        if preferHealthTreatment.isOn {
-            Journal.current?.shopping = true
-        }
-        else {
-            Journal.current?.shopping = false
+            if otherText != nil {
+                Journal.current?.currentlyReceivingTreatment = otherText.text
+            }
         }
         
+        if preferHealthTreatment.isOn {
+            Journal.current?.currentlyReceivingTreatment = "none"
+        }
     }
     
     

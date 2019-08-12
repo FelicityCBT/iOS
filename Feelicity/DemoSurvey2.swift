@@ -27,61 +27,39 @@ class DemoSurvey2: UIViewController {
     
     override func viewDidLoad() {
         
-        // 3
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.contentMode = .scaleAspectFit
-        
-        // 4
-        let image = UIImage(named: "SunIcon")
-        imageView.image = image
-        
-        // 5
-        navigationItem.titleView = imageView
+        super.viewDidLoad()
     }
     
     @IBAction func next(_ sender: Any) {
+        // Question 6
         if yesTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedBefore = "Yes"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        
         if noTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedBefore = "No"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if preferTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedBefore = "none"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+       
         if haveReceivedTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedAndTreatment = "have received services"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        // Question 7
         if currentlyReceivingTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedAndTreatment = "currently receiving services"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        
         if neverReceivedTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedAndTreatment = "have never received"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        
         if preferTreatment.isOn {
-            Journal.current?.shopping = true
+            Journal.current?.diagnosedAndTreatment = "none"
         }
-        else {
-            Journal.current?.shopping = false
-        }
+        
         
     }
     

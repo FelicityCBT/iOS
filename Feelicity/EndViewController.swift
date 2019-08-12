@@ -202,8 +202,6 @@ class EndViewController: UIViewController {
                         "otherCopingMechanisms":
                             (Journal.current?.otherMechanisms)! as String,
                        
-                 // Unnecessary      "behavior": (Journal.current?.behavior)! as String,
-               // Unnecessary        "behaviorInfluence": (Journal.current?.behaviorInfluence)! as String,
                        "copingMech": (Journal.current?.copingMech)! as String,
                        "alternativeCoping": (Journal.current?.alternativeCoping)! as String,
                        "avoided": (Journal.current?.avoided)! as [String], //before just String
