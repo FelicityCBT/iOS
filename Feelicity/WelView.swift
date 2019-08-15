@@ -21,5 +21,8 @@ class WelView: UIViewController {
     }
     
     
+    @IBAction func nextButton(_ sender: Any) {
+        print("hi")
+    }
     
 }

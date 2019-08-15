@@ -4495,13 +4495,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
+                                <rect key="frame" x="22.5" y="94" width="275" height="353.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323.5" width="101" height="155.5"/>
+                                        <rect key="frame" x="115" y="323.5" width="46" height="30"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5086,22 +5086,11 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4K-ZS-7S9">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4K-ZS-7S9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-x4-IWE">
-                                        <rect key="frame" x="21" y="522" width="330" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Thank you and please contact us if you have any questions! 
-</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-jC-eh3">
-                                        <rect key="frame" x="16" y="575" width="158" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-jC-eh3">
+                                        <rect key="frame" x="16" y="575" width="137" height="30"/>
                                         <state key="normal" title="Click this to contact">
                                             <color key="titleColor" red="1" green="0.77448001190000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -5109,8 +5098,17 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                             <action selector="clickLink:" destination="e0e-vc-oJ3" eventType="touchUpInside" id="pIy-VK-nxO"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12z-9J-diD">
+                                        <rect key="frame" x="257" y="575" width="71" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Next Page"/>
+                                        <connections>
+                                            <action selector="nextButton:" destination="e0e-vc-oJ3" eventType="touchUpInside" id="nz2-RO-Rb7"/>
+                                            <segue destination="6DB-qe-yNh" kind="show" id="Vjs-qs-8rt"/>
+                                        </connections>
+                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gtf-Ql-hWy">
-                                        <rect key="frame" x="26" y="92" width="323" height="402"/>
+                                        <rect key="frame" x="26" y="76" width="323" height="402"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Before we begin, we’d love to get to know you. Please fill out the following demographic  survey and screening tools before proceeding to the app. This will ensure that FelicityCBT will be a good fit for your needs.   If you are experiencing any mental health issues or feel you may be in need of clinical assistance, please contact the Counseling and Psychological Services (CAPS) Clinic at 858-534-3755 for a confidential evaluation. CAPS is free for UCSD students who have paid the Student Services Fee for the quarter, including for those without insurance. Crisis and emergency counseling is available for UCSD students 24 hours a day, 7 days a week. Trained counselors are also available 24-hours a day, 7-days a week through the San Diego County Access and Crisis Line at 1-888-724-7240 to provide free support for suicide prevention, as well as information about available mental health services, including for those without insurance. If you are having thoughts of suicide, please call the National Suicide Prevention Lifeline at 1-800-273-8255. If at any time you believe you are having a medical or psychiatric emergency, please dial 911.
@@ -5118,21 +5116,17 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edu-Ae-beh">
-                                        <rect key="frame" x="301" y="575" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="qBk-ZQ-yey"/>
-                                            <constraint firstAttribute="height" constant="50" id="qmq-BL-G9T"/>
-                                        </constraints>
-                                        <state key="normal" image="Arrow"/>
-                                        <connections>
-                                            <segue destination="6DB-qe-yNh" kind="show" id="eDE-0y-H0X"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-r5-4Wa">
-                                        <rect key="frame" x="26" y="50" width="323" height="61"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to FelicityCBT! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-r5-4Wa">
+                                        <rect key="frame" x="26" y="43" width="323" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Welcome to FelicityCBT! 
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-x4-IWE">
+                                        <rect key="frame" x="22" y="498" width="330" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Thank you and please contact us if you have any questions! 
 </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -5140,6 +5134,9 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JRd-jC-eh3" firstAttribute="leading" secondItem="L4K-ZS-7S9" secondAttribute="leading" constant="16" id="lJr-RH-Jye"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="dx5-YD-iFR"/>
                             </view>
                         </subviews>
@@ -5149,7 +5146,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qnl-aJ-WbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="1470"/>
+            <point key="canvasLocation" x="-58.399999999999999" y="1469.4152923538231"/>
         </scene>
         <!--Demo Survey-->
         <scene sceneID="AIy-Eu-Vm3">
@@ -5666,19 +5663,16 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consent Form" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MD-Nb-tdE">
-                                <rect key="frame" x="26" y="39" width="323" height="61"/>
+                                <rect key="frame" x="26" y="39" width="323" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdD-TJ-Fba">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdD-TJ-Fba">
                                 <rect key="frame" x="41" y="603" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="Ff1-s0-1jN"/>
-                                    <constraint firstAttribute="height" constant="30" id="ukl-fM-aa8"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="I agree">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5692,13 +5686,10 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                     <segue destination="ijz-a3-Acl" kind="show" id="HvG-Ac-OND"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-FK-g5b">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOE-FK-g5b">
                                 <rect key="frame" x="203" y="603" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NLb-hn-Wsf"/>
-                                    <constraint firstAttribute="width" constant="130" id="xjL-81-jIv"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="I disagree">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5713,7 +5704,7 @@ This Terms and conditions page was created at termsandconditionstemplate.com gen
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-I8-1OB">
-                                <rect key="frame" x="21" y="94" width="333" height="443"/>
+                                <rect key="frame" x="26" y="79" width="333" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You are invited to participate in a research study titled “Cognitive Behavioral Therapy in a Mobile Application for Mental Disorders.” This study is being conducted through the University of California, San Diego (UCSD) SONA Experiment Management System by Dr. Greenwood. Karen Yang is a co-investigator on this study. Undergraduate students 18 years or older are eligible to participate.
@@ -5787,13 +5778,12 @@ Williams, C., Wilson, P., Morrison, J., Mcmahon, A., Walker, A., Allan, L., . . 
                         <viewLayoutGuide key="safeArea" id="hHb-lp-19c"/>
                     </view>
                     <connections>
-                        <outlet property="consentForm" destination="P4U-I8-1OB" id="ddW-nT-3xF"/>
-                        <outlet property="didScroll" destination="P4U-I8-1OB" id="csi-u1-gQK"/>
+                        <outlet property="consentForm" destination="P4U-I8-1OB" id="g2R-lc-zFS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti7-Pf-237" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="1468"/>
+            <point key="canvasLocation" x="669.60000000000002" y="1467.616191904048"/>
         </scene>
         <!--Phy And Gad1-->
         <scene sceneID="TQy-PW-Img">
@@ -7544,7 +7534,7 @@ You will now be directed to our</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
-        <segue reference="o4w-li-vs1"/>
+        <segue reference="LI1-xm-EoL"/>
         <segue reference="8uP-pC-YDv"/>
     </inferredMetricsTieBreakers>
 </document>
