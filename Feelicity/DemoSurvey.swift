@@ -36,7 +36,7 @@ class DemoSurvey: UIViewController {
     
     
     override func viewDidLoad() {
-        
+        print("hello dude")
         super.viewDidLoad()
     }
     
@@ -44,19 +44,11 @@ class DemoSurvey: UIViewController {
         // First Question
         if femaleGender.isOn {
             Journal.current?.gender = "female"
-        }
-        
-        if maleGender.isOn {
+        } else if maleGender.isOn {
             Journal.current?.gender = "male"
-        }
-      
-        
-        if otherGender.isOn {
+        } else if otherGender.isOn {
             Journal.current?.gender = "other"
-        }
-
-        
-        if prefGender.isOn {
+        } else if prefGender.isOn {
             Journal.current?.gender = "no say"
         }
 
@@ -65,41 +57,26 @@ class DemoSurvey: UIViewController {
             if (ageText.text != nil) {
                 Journal.current?.age = Int(ageText.text)
             }
-        }
-        
-        if prefAge.isOn {
+        } else if prefAge.isOn {
             Journal.current?.age = 0
         }
 
         // Third Question
         if whiteRace.isOn {
             Journal.current?.raceEthnicity = "white"
-        }
-       
-        
-        if hispanicRace.isOn {
+        } else if hispanicRace.isOn {
             Journal.current?.raceEthnicity = "hispanic"
-        }
-       
-        if africanAmericanRace.isOn {
+        } else if africanAmericanRace.isOn {
             Journal.current?.raceEthnicity = "african american"
-        }
-       
-        if nativeAmericanRace.isOn {
+        } else if nativeAmericanRace.isOn {
             Journal.current?.raceEthnicity = "native american"
-        }
-       
-        if AsianRace.isOn {
+        } else if AsianRace.isOn {
             Journal.current?.raceEthnicity = "asian"
-        }
-        
-        if otherRace.isOn {
+        } else if otherRace.isOn {
             if otherText.text != nil {
                 Journal.current?.raceEthnicity = otherText.text
             }
-        }
-       
-        if prefRace.isOn {
+        } else if prefRace.isOn {
             Journal.current?.raceEthnicity = "none"
         }
        

@@ -29,19 +29,13 @@ class DemoSurvey3: UIViewController {
     @IBAction func next(_ sender: Any) {
         if medicationTreatment.isOn {
             Journal.current?.currentlyReceivingTreatment = "medications"
-        }
-
-        if psychotherapyTreatment.isOn {
+        } else if psychotherapyTreatment.isOn {
             Journal.current?.currentlyReceivingTreatment = "psychotherapy"
-        }
-       
-        if otherMentalTreatment.isOn {
+        } else if otherMentalTreatment.isOn {
             if otherText != nil {
                 Journal.current?.currentlyReceivingTreatment = otherText.text
             }
-        }
-        
-        if preferHealthTreatment.isOn {
+        } else if preferHealthTreatment.isOn {
             Journal.current?.currentlyReceivingTreatment = "none"
         }
          Journal.current?.userAcceptDemo = true

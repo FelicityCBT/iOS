@@ -47,6 +47,7 @@ class PhqAndGad9: UIViewController {
         }
         Journal.current?.userAcceptPhqAndGad = true
     }
+    
     @IBAction func cancelPhq(_ sender: Any) {
         if checker == false {
             alertUser(message: "Are you sure you want to leave?")

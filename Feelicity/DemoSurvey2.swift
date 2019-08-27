@@ -26,7 +26,6 @@ class DemoSurvey2: UIViewController {
     
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
     }
     
@@ -34,29 +33,20 @@ class DemoSurvey2: UIViewController {
         // Question 6
         if yesTreatment.isOn {
             Journal.current?.diagnosedBefore = "Yes"
-        }
-        
-        if noTreatment.isOn {
+        } else if noTreatment.isOn {
             Journal.current?.diagnosedBefore = "No"
-        }
-       
-        if preferTreatment.isOn {
+        } else if preferTreatment.isOn {
             Journal.current?.diagnosedBefore = "none"
-        }
-       
-        if haveReceivedTreatment.isOn {
+        } else if haveReceivedTreatment.isOn {
             Journal.current?.diagnosedAndTreatment = "have received services"
         }
+        
         // Question 7
         if currentlyReceivingTreatment.isOn {
             Journal.current?.diagnosedAndTreatment = "currently receiving services"
-        }
-        
-        if neverReceivedTreatment.isOn {
+        } else if neverReceivedTreatment.isOn {
             Journal.current?.diagnosedAndTreatment = "have never received"
-        }
-        
-        if preferTreatment.isOn {
+        } else if preferTreatment.isOn {
             Journal.current?.diagnosedAndTreatment = "none"
         }
         

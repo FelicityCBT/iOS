@@ -16,14 +16,16 @@ import FBSDKLoginKit
 class LogASessionViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
+        /*
         if (Auth.auth().currentUser?.uid == nil) {
             self.goToSignInVC()
-        }
+        }*/
         Journal.current?.currentPage = 1
         guard let currentJournal = UserDefaults.standard.object(forKey: "currentJournal") as? Journal else {
             Journal.current = Journal()
             return }   // retrieves current journal object or if object is empty then create new journal object
         Journal.current = currentJournal
+        /*
         switch (currentJournal.currentPage) {
         case 1 :
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -171,7 +173,7 @@ class LogASessionViewController: UIViewController, GIDSignInUIDelegate {
             
         default :
             break
-        }
+        }*/
     }
     
     @IBAction func logASession(_ sender: Any) {

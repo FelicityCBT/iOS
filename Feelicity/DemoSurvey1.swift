@@ -38,47 +38,28 @@ class DemoSurvey1: UIViewController {
         // Question 4
         if yesUcsd.isOn {
             Journal.current?.collegeStudent = "yes, ucsd"
-        }
-       
-        if yesColl.isOn {
+        } else if yesColl.isOn {
             Journal.current?.collegeStudent = "yes, college"
-        }
-    
-        
-        if noColl.isOn {
+        } else if noColl.isOn {
             Journal.current?.collegeStudent = "no, college"
-        }
-      
-        if prefStudent.isOn {
+        } else if prefStudent.isOn {
             Journal.current?.collegeStudent = "none"
         }
        
         // Question 5
         if freshYear.isOn {
             Journal.current?.currentlyEnrolled = "freshman"
-        }
-        
-        if sophoYear.isOn {
+        } else if sophoYear.isOn {
              Journal.current?.currentlyEnrolled = "sophomore"
-        }
-       
-        if juniorYear.isOn {
+        } else if juniorYear.isOn {
              Journal.current?.currentlyEnrolled = "junior"
-        }
-        
-        if seniorYear.isOn {
+        } else if seniorYear.isOn {
              Journal.current?.currentlyEnrolled = "senior"
-        }
-        
-        if superSeniorYear.isOn {
+        } else if superSeniorYear.isOn {
              Journal.current?.currentlyEnrolled = "super senior"
-        }
-       
-        if noYear.isOn {
+        } else if noYear.isOn {
              Journal.current?.currentlyEnrolled = "not applicable"
-        }
-       
-        if prefYear.isOn {
+        } else if prefYear.isOn {
              Journal.current?.currentlyEnrolled = "none"
         }
         
