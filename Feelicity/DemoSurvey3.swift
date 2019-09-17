@@ -19,6 +19,7 @@ class DemoSurvey3: UIViewController {
     @IBOutlet weak var otherMentalTreatment: UISwitch!
     @IBOutlet weak var preferHealthTreatment: UISwitch!
     @IBOutlet weak var otherText: UITextView!
+    var ref: DatabaseReference!
     
     var checker = false
     
@@ -39,6 +40,43 @@ class DemoSurvey3: UIViewController {
             Journal.current?.currentlyReceivingTreatment = "none"
         }
          Journal.current?.userAcceptDemo = true
+        
+        // Write the Demo Survey to Firebase
+        if Auth.auth().currentUser == nil {
+            return
+        }
+        else {
+            ref = Database.database().reference()
+            let key = Auth.auth().currentUser!.uid
+            let journal = ["User": key,
+                           "Timestamp": Date(),
+                           "Date": Date(),
+                           "DateAsSeconds": Date().timeIntervalSince1970,
+                           
+                           // Added by George on 9/16 for Demo Survey
+                "Gender":
+                    (Journal.current?.gender)! as String,
+                "Age":
+                    (Journal.current?.age)! as Int,
+                "Race/Ethnicity":
+                    (Journal.current?.raceEthnicity)! as String,
+                "CollegeStudent":
+                    (Journal.current?.collegeStudent)! as String,
+                "CurrentlyEnrolledCollegeYear":
+                    (Journal.current?.currentlyEnrolled)! as String,
+                "RecentlyDiagnosed":
+                    (Journal.current?.diagnosedBefore)! as String,
+                "HistoryOfMentalTreatment":
+                    (Journal.current?.diagnosedAndTreatment)! as String,
+                "CurrentlyMentalHealth":
+                    (Journal.current?.currentlyReceivingTreatment)! as String] as [String : Any]
+            
+            let id = UUID().uuidString
+            ref.child("Journal").child(id).setValue(journal, withCompletionBlock: { (error, snapshot) in
+                self.ref?.child("Users").child(key).child("Journal").child(journal["Date"] as! String).updateChildValues([id: journal["Timestamp"]!])
+                
+            })
+        }   // else clause
     }
     
     @IBAction func cancelDemo(_ sender: Any) {
